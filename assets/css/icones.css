@@ -1,0 +1,51 @@
+.icone::before{
+    display: block;
+    content: "";
+    width: 83px;
+    height: 115px;
+    background-color: white;
+    position: absolute;
+    top:-20px;
+    left: -30px;   
+    background-repeat: no-repeat;  
+}
+
+.icone.dica::before{
+    background-image: url(../img/ico-dica.png);
+}
+
+.icone.praticar::before{
+    background-image: url(../img/ico-praticar.png);
+}
+
+.icone.pergunta::before{
+    background-image: url(../img/ico-pergunta.png);
+}
+.icone.refletir::before{
+    background-image: url(../img/ico-refletir.png);
+}
+
+.icone.saiba-mais::before{
+    background-image: url(../img/ico-saiba.png);
+}
+
+.icone.atencao::before{
+    background-image: url(../img/Pg4-ico-praticar.png);
+    width: 115px;
+    height: 155px;
+    background-color: transparent;
+}
+.icone.importante::before{
+    left: 5px;
+    top: -35px;
+    background-image: url(../img/ico-importante.png);
+    width: 119px;
+    height: 143px;
+    background-color: transparent;
+}
+
+@media print{
+    .icone::before{
+        display:none !important
+    }
+}

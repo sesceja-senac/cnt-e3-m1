@@ -1,0 +1,39 @@
+html, body, canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: fixed;
+  background: black;
+}
+.lil-gui.autoPlace{
+  display: none !important;
+
+}
+
+.hudTop{
+  position: absolute;
+  top: 0;
+}
+.hudBottom{
+  position: absolute;
+  bottom: 0;
+}
+/* .hudConteudo{
+  position: absolute;
+} */
+.btConteudo{
+  position: absolute;
+  right: 30%;
+  top: 30%;
+}
+.btRef{
+  position: absolute;
+  right: 20%;
+  top: 60%;
+}
+.btVideo{
+  position: absolute;
+  left: 20%;
+  top: 45%;
+}

@@ -1,0 +1,197 @@
+/* body::after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+    content:url('../../img/tela-inicial/noite.jpg') url('../../img/tela-inicial/pedra-noite.png');
+ } */
+
+* {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+body{
+    display: block;
+    height: 100%;
+    width: 100%;
+    /* background-image: url('../../img/pginicial/Telainicial-bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0px 120px; */
+}
+a{
+    text-decoration: none;
+}
+#topo img{ width: 100%;}
+#menu{
+    float: right;
+    max-width: 60%;
+}
+.aneis{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: transparent;
+    border: 10px solid black;
+    float: left;
+}
+.box{
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../../img/telaInicial/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img-atletas{
+    float: left;
+    display: block;
+    max-width:40%;
+}
+.img-titulo{
+    max-width: 600px;
+}
+
+
+
+
+
+/* #bt-intro1 a, #bt-intro2 a, #bt-intro4 a, #bt-intro4 a, #bt-intro5 a, #bt-intro6 a{
+    transition: all 0.3s;
+}
+
+#bt-intro1:hover a, #bt-intro2:hover a, #bt-intro3:hover a, #bt-intro4:hover a, #bt-intro5:hover a, #bt-intro6:hover a{ 
+    text-shadow: -10px 10px 0px #919191,
+                 -20px 20px 0px #3b3b3b,
+                 -30px 30px 0px #303030;
+                 color: transparent;
+    opacity: 0.65;
+    cursor: pointer;
+} */
+
+
+/* INI video intro */
+
+.backdrop {
+    background-color: rgba(55,55,55, .8);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.modal-video {
+    background-image: url('../../img/pginicial/Video-apresentacao-gd.png');
+    width: 1133px;
+    height: 708px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 260px;
+    padding-top: 120px;
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.modal-video video {
+    height: 300px;
+    width: 600px;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+#fechar-video {
+    position: absolute;
+    top: 60px;
+    right: 200px;
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 2px 2px 3px #333;
+    transition-duration: .3s;
+}
+#fechar-video:hover {
+    background-color: #ff8b01;
+    color: white;
+    transition-duration: .3s;
+}
+.botao-video {
+    position: absolute;
+    top: 175px;
+    left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.botao-video p {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+}
+.video-pq {
+    height: 150px;
+    width: 150px;
+    background-image: url('../../img/pginicial/Video-apresentacao-pq.png'); 
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    padding-left: 29px;
+    padding-top: 23px;
+}
+.img-play {
+    height:85px;
+    width: 85px;
+}
+.video-pq:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+/* FIM video intro */
+
+@media (max-width: 1680px) {
+    /* #menu{
+        max-width:70%;
+    } */
+}
+@media (max-width: 1360px) {
+    body{
+        background-image: url('../../img/pg1/Bg-textura.png');
+        background-size: 100% 100%;
+        background-position: 0px 0px;
+    }
+    .pgInicial-linha2 {
+        margin-top: 0px;
+    }
+    .botao-video {
+        position: absolute;
+        top: 85px;
+        left: 0;
+     right: 0;
+    }
+}
+@media (max-width: 860px) {
+    #menu{
+        margin: 280px auto 0px
+    }
+    #bt-intro1, #bt-intro2, #bt-intro3 {
+        height: 250px;
+    }
+}
+@media (max-width: 760px) {
+    #bt-intro1, #bt-intro2, #bt-intro3 {
+        height: 200px;
+    }
+    @media (max-width: 560px) {
+        #bt-intro1, #bt-intro2, #bt-intro3 {
+            height: 150px;
+        }
+}

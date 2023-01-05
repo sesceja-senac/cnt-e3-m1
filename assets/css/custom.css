@@ -1,0 +1,950 @@
+body {
+    overflow-x: hidden;
+}
+
+#preload-01 {
+    background: url('../../img/pagina5/pg5-mapa-bt-1.png') no-repeat -9999px -9999px;
+}
+
+#preload-02 {
+    background: url('../../img/pagina5/pg5-mapa-bt-2.png') no-repeat -9999px -9999px;
+}
+
+#preload-03 {
+    background: url('../../img/pagina5/pg5-mapa-bt-3.png') no-repeat -9999px -9999px;
+}
+
+#preload-04 {
+    background: url('../../img/pagina5/pg5-mapa-bt-4.png') no-repeat -9999px -9999px;
+}
+#booklet{position: relative;}
+.pagina > .container{ padding-bottom: 200px;}
+.titulo-conteudo{
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+}
+.pg-footer{
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+}
+.bloco.estilo1 {
+    background: unset;
+    background-image: url('../../img/pagina1/estampa.png');
+    background-repeat: repeat-y;
+    background-size: 15% 2000px;
+    background-color: #00838d;
+    padding-bottom: 20px;
+    padding-top: 100px;
+    padding-top: 50px;
+}
+
+.bloco.estilo1 .container {
+    padding-top: 50px;
+}
+
+.estilo1 .caixa {
+    border-color: white;
+}
+
+.bloco.estilo3 {
+    background-color: #004f53;
+    background-image: url('../../img/pagina1/estampa.png');
+    background-repeat: repeat-y;
+    background-size: 15% 2000px;
+}
+
+.bloco.estilo2 {
+    background-color: #ff9200;
+    background-image: url('../../img/pagina1/estampa.png');
+    background-repeat: repeat-y;
+    background-size: 15% 2000px;
+}
+
+.bloco {
+    background: unset;
+    background-image: url('../../img/pagina1/estampa.png');
+    background-repeat: repeat-y;
+    background-size: 15% 2000px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    margin-bottom: 5px;
+}
+
+.bloco .container p,
+.bloco .container h2,
+.bloco .container h3,
+.bloco .container .figcaption,
+.bloco .container {
+    color: #333;
+}
+
+.bloco.estilo1 .container p,
+.bloco.estilo1 .container h2,
+.bloco.estilo1 .container h3,
+.bloco.estilo1 .container figcaption {
+    color: white;
+}
+
+.modal-body p {
+    color: #333 !important;
+
+}
+
+.bloco.estilo1 h3,
+.bloco.estilo3 h3,
+.bloco.estilo3 h4,
+.bloco.estilo1 h4,
+.bloco.estilo3 a,
+.bloco.estilo1 a {
+    color: white;
+}
+
+.estilo3 .accordion-item .accordion-body figcaption,
+.estilo3 .accordion-item .accordion-body a,
+.estilo3 .accordion-item .accordion-body p {
+    color: #333;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+.painel-container {
+    width: 100%;
+    background-image: url('../../img/pagina1/pg1-painelbg.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.painel-container button {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    margin: 10px;
+    transition-duration: .5s;
+    background-color: transparent;
+    background-size: contain;
+    border: none;
+}
+
+
+figcaption {
+    text-align: center;
+}
+
+.bloco-2 .caixa p {
+    color: white;
+}
+
+.tooltip-inner {
+    max-width: 400px;
+    font-size: 16px;
+}
+
+.estilo1 .container .caixa {
+    background-color: white;
+}
+
+.bloco.estilo1 .container .caixa p {
+    color: #333;
+}
+
+.bloco.estilo3 p,
+.bloco.estilo3 h4,
+.bloco.estilo3 figcaption {
+    color: white;
+}
+
+.container .caixa {
+    background-image: url('../../img/pg2/ico-saibamais.png');
+    background-color:#00838d;
+    background-repeat: no-repeat;
+    color: white;
+
+    border: none;
+    border-radius: 20px;
+    padding: 85px 30px;
+}
+
+.bloco .container .caixa p {
+    color: white;
+}
+
+.caixa.icone {
+    padding-left: 100px;
+}
+
+.icone.dica::before {
+    background-image: url('../../img/pagina1/pg1-dica-ico.png');
+    height: 192px;
+    width: 249px;
+    background-size: contain;
+    background-color: transparent;
+    margin-top: -50px;
+    margin-left: 20px;
+}
+
+.icone.saiba-mais::before {
+    background-image: url('../../img/pg3/Pg3-saibamais-ico.png');
+    height: 135px;
+    width: 101px;
+    background-size: contain;
+    background-color: transparent;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+.icone.vamos-praticar::before {
+    background-image: url('../../img/pg4/Pg4-ico-praticar.png');
+    height: 135px;
+    width: 101px;
+    background-size: contain;
+    background-color: transparent;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.icone.pesquisa::before {
+    background-image: url('../../img/pagina4/pg4-pesquisar-ico.png');
+    height: 182px;
+    width: 239px;
+    background-size: contain;
+    background-color: transparent;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+.pagination {
+    justify-content: center;
+}
+.tela-inicial:hover {
+    opacity: 0.5;
+}
+
+.tela-inicial {
+    background-image: url(../img/bt-telainicial.png);
+    width: 174px;
+    height: 56px;
+    display: block;
+    margin: -20px auto 40px auto;
+}
+#topo img{ width: 100%;}
+/* Estilo adicional  */
+div.box-atividade .f-negativo,
+div.box-atividade .f-positivo.text-success{
+    background-color: #fff;
+    padding: 10px;
+}
+
+
+.box-atividade{
+    background-color:#00838d ;
+    border-top-right-radius: 19px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 18px;
+    border: none;
+    padding: 30px;
+    box-shadow: 10px 10px 3px #333333a8;
+}
+.box-atividade p.enunciado{
+    color: #fff;
+}
+
+/* .titulo-head{
+    font-size: 40px;
+    padding: 15px 0px 0px;
+} */
+.boxC-modal figure{ cursor: pointer;}
+.boxC-modal figure:hover{ opacity: 0.6;}
+.boxC-modal figcaption{
+    border-top: 5px solid orange;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: initial;
+}
+#carouselId.carousel.sesc {
+    margin: 80px 20px;
+}
+#bloco-bg-slider{
+    position: absolute;
+    top: 2%;
+    width: 100%;
+}
+#bloco-bg-slider img{ width: 100%;}
+figcaption {
+    margin-bottom: 15px;
+}
+
+h2 {
+    margin: 1em auto;
+}
+
+
+
+/* Fim estilo adicional */
+/* new */
+#booklet > footer > ul > li.active a{
+    background-color: #00838d;
+    color: #fff;
+}
+/* relax */
+
+/* relax */
+.rellax {
+    width: 14%;
+    position: absolute;
+    z-index: 10;
+}
+.rellax-direita {
+    right: 0;
+}
+.relax-top1 {
+    top: 50px;
+}
+.relax-top2 {
+    top: 250px;
+}
+.relax-top3 {
+    top: 350px;
+}
+.relax-top4 {
+    top: 450px;
+}
+.relax-top5 {
+    top: 550px;
+}
+.relax-top6 {
+    top: 650px;
+}
+.relax-top7 {
+    top: 750px;
+}
+.relax-top8 {
+    top: 850px;
+}
+.relax-top9 {
+    top: 950px;
+}
+.relax-top15 {
+    top: 1550px;
+}
+.relax-top18 {
+    top: 1850px;
+}
+.relax-top20 {
+    top: 2050px;
+}
+.relax-top25 {
+    top: 2550px;
+}
+/* blocos */
+#booklet > header > div{
+    background-color: transparent;
+}
+.pagina > div > .container{
+    padding: 30px;
+    background-color: transparent;
+    color: #fff;
+}
+
+    /* background: url(../imgs/pg2-bloco1-dir.png) no-repeat right bottom 10% / 20%, url(../imgs/pg2-bloco1-bg.png) no-repeat; */
+    /* margin-top: -11px; */
+    /* padding-top: 0; */
+h4{
+    color: #ff9200;
+}
+/* Bloco1 paralax */
+.bloco1dtopo{
+    width: 100%;
+    height: 30px;
+    background-color: black;
+}
+.bloco1-paralax1d{
+    background:  url(../../img/assets/parallax/parallax1d.png) no-repeat;
+    margin-top: -11px;
+    background-attachment: fixed;
+    padding-top: 0;
+    height: 400px;
+    background-size: cover;
+}
+.bloco1-paralax1a{
+    background: url(../../img/assets/parallax/parallax1a.png);
+    margin-top: -11px;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    background-size: 100% 100%;
+    margin-top: -400px;
+    height: 400px;
+}
+.bloco1-paralax1b{
+    background: url(../../img/assets/parallax/parallax1b.png);
+    margin-top: -11px;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    background-size: 100% 100%;
+    margin-top: -400px;
+    height: 400px;
+}
+.bloco1-paralax1c{
+    background: url(../../img/assets/parallax/parallax1c.png);
+    margin-top: -11px;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    background-size: 100% 100%;
+    margin-top: -400px;
+    height: 400px;
+}
+/* Fim Bloco1 paralax */
+
+/* Bloco4 paralax */
+.bloco4dtopo{
+    width: 100%;
+    height: 30px;
+    background-color: #00273C;
+}
+.bloco4-paralax1d{
+    background:  url(../../img/assets/parallax/parallax2d.png) no-repeat;
+    margin-top: -11px;
+    background-attachment: fixed;
+    padding-top: 0;
+    height: 400px;
+    background-size: cover;
+}
+.bloco4-paralax1a{
+    background: url(../../img/assets/parallax/parallax2a.png);
+    margin-top: -11px;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    background-size: 100% 100%;
+    margin-top: -400px;
+    height: 400px;
+}
+.bloco4-paralax1b{
+    background: url(../../img/assets/parallax/parallax2b.png);
+    margin-top: -11px;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    background-size: 100% 100%;
+    margin-top: -400px;
+    height: 400px;
+}
+.bloco4-paralax1c{
+    background: url(../../img/assets/parallax/parallax2c.png);
+    margin-top: -11px;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    background-size: 100% 100%;
+    margin-top: -400px;
+    height: 400px;
+}
+/* fim bloco4 paralax */
+
+/* Bloco7 paralax */
+.bloco7dtopo{
+    width: 100%;
+    height: 30px;
+    background-color: #00273C;
+}
+.bloco7-paralax1d{
+    background:  url(../../img/assets/parallax/parallax3d.png) no-repeat;
+    margin-top: -11px;
+    background-attachment: fixed;
+    padding-top: 0;
+    height: 400px;
+    background-size: cover;
+}
+.bloco7-paralax1a{
+    background: url(../../img/assets/parallax/parallax3a.png);
+    margin-top: -11px;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    background-size: 100% 100%;
+    margin-top: -400px;
+    height: 400px;
+}
+.bloco7-paralax1b{
+    background: url(../../img/assets/parallax/parallax3b.png);
+    margin-top: -11px;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    background-size: 100% 100%;
+    margin-top: -400px;
+    height: 400px;
+}
+.bloco7-paralax1c{
+    background: url(../../img/assets/parallax/parallax3c.png);
+    margin-top: -11px;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    background-size: 100% 100%;
+    margin-top: -400px;
+    height: 400px;
+}
+/* fim bloco7 paralax */
+/* Bloco12 paralax */
+.bloco12dtopo{
+    width: 100%;
+    height: 30px;
+    background-color: #00273C;
+}
+.bloco12-paralax1d{
+    background:  url(../../img/assets/parallax/parallax4d.png) no-repeat;
+    margin-top: -11px;
+    background-attachment: fixed;
+    padding-top: 0;
+    height: 400px;
+    background-size: cover;
+}
+.bloco12-paralax1a{
+    background: url(../../img/assets/parallax/parallax4a.png);
+    margin-top: -11px;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    background-size: 100% 100%;
+    margin-top: -400px;
+    height: 400px;
+}
+.bloco12-paralax1b{
+    background: url(../../img/assets/parallax/parallax4b.png);
+    margin-top: -11px;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    background-size: 100% 100%;
+    margin-top: -400px;
+    height: 400px;
+}
+.bloco12-paralax1c{
+    background: url(../../img/assets/parallax/parallax4c.png);
+    margin-top: -11px;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    background-size: 100% 100%;
+    margin-top: -400px;
+    height: 400px;
+}
+/* fim bloco12 paralax */
+/* Bloco13 paralax */
+.bloco13dtopo{
+    width: 100%;
+    height: 30px;
+    background-color: #00273C;
+}
+.bloco13-paralax1d{
+    background:  url(../../img/assets/parallax/parallax5d.png) no-repeat;
+    margin-top: -11px;
+    background-attachment: fixed;
+    padding-top: 0;
+    height: 400px;
+    background-size: cover;
+}
+.bloco13-paralax1a{
+    background: url(../../img/assets/parallax/parallax5a.png);
+    margin-top: -11px;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    background-size: 100% 100%;
+    margin-top: -400px;
+    height: 400px;
+}
+.bloco13-paralax1b{
+    background: url(../../img/assets/parallax/parallax5b.png);
+    margin-top: -11px;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    background-size: 100% 100%;
+    margin-top: -400px;
+    height: 400px;
+}
+.bloco13-paralax1c{
+    background: url(../../img/assets/parallax/parallax5c.png);
+    margin-top: -11px;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    background-size: 100% 100%;
+    margin-top: -400px;
+    height: 400px;
+}
+/* fim bloco13 paralax */
+/* Bloco15 paralax */
+.bloco15dtopo{
+    width: 100%;
+    height: 30px;
+    background-color: #00273C;
+}
+.bloco15-paralax1d{
+    background:  url(../../img/assets/parallax/parallax6d.png) no-repeat;
+    margin-top: -11px;
+    background-attachment: fixed;
+    padding-top: 0;
+    height: 400px;
+    background-size: cover;
+}
+.bloco15-paralax1a{
+    background: url(../../img/assets/parallax/parallax6a.png);
+    margin-top: -11px;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    background-size: 100% 100%;
+    margin-top: -400px;
+    height: 400px;
+}
+.bloco15-paralax1b{
+    background: url(../../img/assets/parallax/parallax6b.png);
+    margin-top: -11px;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    background-size: 100% 100%;
+    margin-top: -400px;
+    height: 400px;
+}
+.bloco15-paralax1c{
+    background: url(../../img/assets/parallax/parallax6c.png);
+    margin-top: -11px;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    background-size: 100% 100%;
+    margin-top: -400px;
+    height: 400px;
+}
+/* fim bloco15 paralax */
+/* Bloco16 paralax */
+.bloco16dtopo{
+    width: 100%;
+    height: 30px;
+    background-color: #00273C;
+}
+.bloco16-paralax1d{
+    background:  url(../../img/assets/parallax/parallax7d.png) no-repeat;
+    margin-top: -11px;
+    background-attachment: fixed;
+    padding-top: 0;
+    height: 400px;
+    background-size: cover;
+}
+.bloco16-paralax1a{
+    background: url(../../img/assets/parallax/parallax7a.png);
+    margin-top: -11px;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    background-size: 100% 100%;
+    margin-top: -400px;
+    height: 400px;
+}
+.bloco16-paralax1b{
+    background: url(../../img/assets/parallax/parallax7b.png);
+    margin-top: -11px;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    background-size: 100% 100%;
+    margin-top: -400px;
+    height: 400px;
+}
+.bloco16-paralax1c{
+    background: url(../../img/assets/parallax/parallax7c.png);
+    margin-top: -11px;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    background-size: 100% 100%;
+    margin-top: -400px;
+    height: 400px;
+}
+/* fim bloco16 paralax */
+.bloco1-pg1{
+    position: relative;
+    background-image: url('../../img/assets/bg1.png');
+    background-size: cover;
+background-repeat: no-repeat;
+}
+.bloco2-pg1{
+    position: relative;
+    background-image: url('../../img/assets/bg2.png');
+    background-size: cover;
+     background-attachment: fixed;
+background-repeat: no-repeat;
+    margin-top: -16px;
+}
+.bloco3-pg1{
+    position: relative;
+    background-image: url('../../img/assets/bg3.png');
+    background-size: cover;
+     background-attachment: fixed;
+background-repeat: no-repeat;
+}
+.bloco4-pg1{
+    position: relative;
+    background-image: url('../../img/assets/bg4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.bloco5-pg1{
+    position: relative;
+    background-image: url('../../img/assets/bg5.png');
+    background-size: cover;
+     background-attachment: fixed;
+background-repeat: no-repeat;
+}
+.bloco6-pg1{
+    position: relative;
+    background-image: url('../../img/assets/bg6.png');
+    background-size: cover;
+     background-attachment: fixed;
+background-repeat: no-repeat;
+}
+.bloco7-pg1{
+    position: relative;
+    background-image: url('../../img/assets/bg7.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.bloco8-pg1{
+    position: relative;
+    background-image: url('../../img/assets/bg8.png');
+    background-size: cover;
+     background-attachment: fixed;
+background-repeat: no-repeat;
+}
+.bloco9-pg1{
+    position: relative;
+    background-image: url('../../img/assets/bg9.png');
+    background-size: cover;
+     background-attachment: fixed;
+background-repeat: no-repeat;
+}
+.bloco10-pg1{
+    position: relative;
+    background-image: url('../../img/assets/bg10.png');
+    background-size: cover;
+     background-attachment: fixed;
+background-repeat: no-repeat;
+}
+.bloco1-pg2{
+    position: relative;
+    background-image: url('../../img/assets/bg11.png');
+    background-size: cover;
+background-repeat: no-repeat;
+}
+.bloco2-pg2{
+    position: relative;
+    background-image: url('../../img/assets/bg12.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.bloco3-pg2{
+    position: relative;
+    background-image: url('../../img/assets/bg13.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.bloco4-pg2{
+    position: relative;
+    background-image: url('../../img/assets/bg14.png');
+    background-size: cover;
+     background-attachment: fixed;
+background-repeat: no-repeat;
+}
+.bloco5-pg2{
+    position: relative;
+    background-image: url('../../img/assets/bg15.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.bloco6-pg2{
+    position: relative;
+    background-image: url('../../img/assets/bg16.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.bloco7-pg2{
+    position: relative;
+    background-image: url('../../img/assets/bg17.png');
+    background-size: cover;
+     background-attachment: fixed;
+background-repeat: no-repeat;
+}
+
+.destaque-borda{
+    background-image: url('../../img/assets/destaque_titulo.png');
+    background-size: cover;
+    height: 75px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 70px;
+} 
+/* refs */
+.bloco1-pg5{
+    background-image: url('../../img/assets/bg18.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bloco1-pg5 .container{
+    padding-bottom: 200px !important;
+}
+/* .bloco1-pg2, .bloco1-pg3, .bloco1-pg4, .bloco1-pg5, .bloco2-pg3{
+    position: relative;
+    padding-top: 100px;
+}
+.bloco1-pg2, .bloco3-pg2, .bloco5-pg2, .bloco1-pg3, .bloco50-pg3, .bloco1-pg4, .bloco3-pg3{
+    position: relative;
+    padding-top: 100px;
+    background-image: url('../../img/pg2/bg-branco.png');
+    background-attachment: fixed;
+}
+.bloco2-pg2{
+    background-image: url('../../img/pg2/bg-praticar.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bloco4-pg2{
+    position: relative;
+    background-image: url('../../img/pg2/bg3-meio.png');
+}
+.bloco4-pg2 .container, .bloco2-pg3 .container, .bloco42-pg3 .container, .bloco5-pg3 .container{
+    padding: 30px;
+    background-color: transparent;
+    color: #fff;
+
+}
+.bloco4-pg3 .container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.bloco42-pg3 .container{
+    padding-top: 100px;
+}
+.bloco42-pg3{
+    position: relative;
+    padding-bottom: 200px;
+    background-image: url('../../img/pg3/bg4.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.bloco5-pg3{
+    background-image: url('../../img/pg3/bg6.png');
+    background-size: 100% 100%;
+}
+.bloco5-pg3 .container, .bloco1-pg4 .container, .bloco1-pg5 .container{padding-bottom: 200px;}
+
+.bloco5-pg2{
+    padding-bottom: 200px;
+}
+.bloco2-pg3{
+    position: relative;
+    background-image: url('../../img/pg3/bg2.png');
+}
+.bloco4-pg3{
+    position: relative;
+    background-image: url('../../img/pg3/bg3.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+} */
+/* blocos */
+.bt-hov{
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.2;
+}
+.bt-hov:hover{
+    cursor: pointer;
+    opacity: 0.5 !important;
+}
+.box-halfcard{
+    text-align: center;
+    padding: 5px;
+
+}
+.halfcard{
+    box-shadow: 10px 10px 3px #333333a8;
+    border: 5px solid #00838d;
+}
+.box-halfcard .box-halfcard-tit{
+    background-color: #00838d;
+    color: #fff;
+}
+.box-halfcard .box-halfcard-content{
+    padding: 5px;
+    background-color: #fff;
+    color: #333;
+    
+}
+/* new fim */
+
+@media (max-width: 1680px) {
+    
+    #bloco-bg-slider{
+        top: 3.5%;
+    }
+   
+}
+@media (max-width: 1280px) {
+    
+    #bloco-bg-slider{
+        top: 5%;
+    }
+   
+}
+/* @media (max-width: 1280px) {
+    
+    #bloco-bg-slider{
+        top: 2%;
+    }
+   
+} */
+
+@media (max-width: 990px) {
+    #topo img{ display: none;}
+}
+
+@media (max-width: 870px) {
+
+}
+
+@media (max-width: 760px) {
+    .bg-audioplay{
+        background-image: none;
+        background-color: #00838d;
+        padding-left: 20px;
+    }
+    img[id^="bt-audio"]{
+        max-width: 100%;
+    }
+    .titulo-head {
+        margin-right: 22%;
+    }
+    .boxC-modal figcaption {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+}
+
+@media (max-width:500px) {
+    .audio-img-us, .audio-img-br {
+        width: 60px;
+        height: 45px;
+        background-size: 120px;
+    }
+    .audio-img-us:hover, .audio-img-br:hover {background-position: -60px;}
+    img-carimbo::before{
+        bottom:22% ;
+    }
+    
+}
+.pg-footer a:visited {
+    color: #7a7a7a;
+    background-color: #d9d9d9;
+}

@@ -1,0 +1,58 @@
+/*Esquema da Bru*/
+div.esquemaDaBru{
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+.esquemaDaBru .alt-c, .esquemaDaBru .alt-e{
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position-y: center;
+    background-position-x: 98%;
+    padding: 5px 10px;
+    text-align: left;
+    font-size: 1rem;
+    width: 100%;
+    padding-right: 60px;
+    transition: 50ms;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: initial;
+    font-weight: initial;
+    background-color: white;
+}
+.alt-c.selected,
+.alt-e.selected{
+    transform: none;
+    color: white;
+    background-color: #00838D;
+    box-shadow: 0 0px 6px rgba(0, 0, 0, .3);
+}
+.alt-c.selected:hover, .alt-e.selected:hover{
+    transform: none;
+    color: white;
+    background-color: #00838D;
+    box-shadow: 0 0px 6px rgba(0, 0, 0, .3);
+}
+/*
+
+
+*/
+.esquemaDaBru .selected.certo{
+    background-color: rgb(215, 235, 175);
+    border-color: green;    
+    color: green;
+    background-image: url(ico-positive.png);    
+}
+.esquemaDaBru .selected.errado{
+    background-color: rgb(235, 175, 175);  
+    border-color: darkred; 
+    color: darkred;
+    background-image: url(ico-negative.png);    
+}
+
+.esquemaDaBru .enunciado{
+    margin-top: 10px;
+    font-weight: bold;
+    color: #00838D;
+}
