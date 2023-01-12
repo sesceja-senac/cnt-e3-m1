@@ -1,7 +1,8 @@
 body {
     overflow-x: hidden;
 }
-
+h2, h3, h4, .texto-amarelo{color: #ff9200;}
+p{word-wrap: break-word;}
 #preload-01 {
     background: url('../../img/pagina5/pg5-mapa-bt-1.png') no-repeat -9999px -9999px;
 }
@@ -18,6 +19,7 @@ body {
     background: url('../../img/pagina5/pg5-mapa-bt-4.png') no-repeat -9999px -9999px;
 }
 #booklet{position: relative;}
+.bt-print{z-index: 9;}
 .pagina > .container{ padding-bottom: 200px;}
 .titulo-conteudo{
     background-color: transparent;
@@ -660,7 +662,9 @@ h4{
     position: relative;
     background-image: url('../../img/assets/bg1.png');
     background-size: cover;
-background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-position: center;
 }
 .bloco2-pg1{
     position: relative;
@@ -695,8 +699,9 @@ background-repeat: no-repeat;
     position: relative;
     background-image: url('../../img/assets/bg6.png');
     background-size: cover;
-     background-attachment: fixed;
-background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .bloco7-pg1{
     position: relative;
@@ -723,14 +728,17 @@ background-repeat: no-repeat;
     position: relative;
     background-image: url('../../img/assets/bg10.png');
     background-size: cover;
-     background-attachment: fixed;
-background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding-bottom: 130px;
 }
 .bloco1-pg2{
     position: relative;
     background-image: url('../../img/assets/bg11.png');
     background-size: cover;
-background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding-top: 100px;
 }
 .bloco2-pg2{
     position: relative;
@@ -738,6 +746,7 @@ background-repeat: no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
 }
 .bloco3-pg2{
     position: relative;
@@ -772,7 +781,8 @@ background-repeat: no-repeat;
     background-image: url('../../img/assets/bg17.png');
     background-size: cover;
      background-attachment: fixed;
-background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    padding-bottom: 140px;
 }
 
 .destaque-borda{
@@ -782,12 +792,14 @@ background-repeat: no-repeat;
     text-align: center;
     font-weight: 700;
     line-height: 70px;
+    margin: 50px auto;
 } 
 /* refs */
 .bloco1-pg5{
     background-image: url('../../img/assets/bg18.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .bloco1-pg5 .container{
     padding-bottom: 200px !important;
@@ -881,6 +893,125 @@ background-repeat: no-repeat;
 }
 /* new fim */
 
+.icone.desafio::before{
+    background: url('../../img/assets/ico_desafio.png') no-repeat;
+    background-color: transparent;
+    width: 202px;
+    height: 196px;
+    top: -45px;
+    left: -105px;
+}
+
+.icone.dica::before{
+    background: url('../../img/assets/ico_dica.png') no-repeat;
+    background-color: transparent;
+    width: 202px;
+    height: 196px;
+    top: 0;
+    left: -65px;
+}
+
+.icone.praticar::before{
+    background: url('../../img/assets/ico_vamospraticar.png') no-repeat;
+    background-color: transparent;
+    width: 202px;
+    height: 196px;
+    top: -45px;
+    left: -50px;
+}
+
+.texto-podcast{
+    position: relative;
+    width: 460px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    border: #0d90a8 solid 3px;
+    z-index: 4;
+    margin: 20px auto -110px auto;
+}
+.texto-podcast p{color: #333;}
+.podcast-container {
+    width: 809px;
+    height: 265px;
+    background-image: url('../../img/assets/podcast_bg.png');
+    margin: 50px auto 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.sesc-audio-player {
+    width: 200px;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    margin-left: -35px;
+}
+.sesc-audio-player .botoes {
+    text-align: center;
+}
+.sesc-audio-player input[type="range"] {
+    border-radius: 5px;
+}
+.sesc-audio-player .timestamp {
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-left: unset;
+}
+#modal-transcricao-audio figcaption{
+    color: #333;
+    font-size: 1rem;
+}
+.esquemaDaBru .enunciado{
+    font-weight: normal;
+    color: #fff;
+}
+.verdadeiro-falso .btn-sesc {
+    width: 150px;
+    text-align: center;
+    padding-right: 10px;
+}
+.feedbacks{
+    background: #fff;
+    text-align: center;
+}
+.alt-c.selected{background-color: #1f8a59;}
+.alt-e.selected{background-color: #dc3545;}
+
+.pg2-modais img{
+    max-width: 200px;
+}
+.bt-viagem{
+    background: url('../../img/assets/bt_breveviagem.png') no-repeat;
+    width: 737px;
+    height: 213px;
+}
+.bt-viagem:hover{
+    background: url('../../img/assets/bt_breveviagem_press.png') no-repeat;
+}
+.bt-tooltip{
+    border:none;
+    color:#ff9200;
+    background: transparent;
+}
+.gif{
+    max-width: 400px;
+}
+iframe {
+    width: 580px;
+    height: 360px;
+    margin: 10px auto;
+    display: block;
+}
+.painel-clicavel{
+    background: url('../../img/assets/modelo_info_bg.png') no-repeat;
+    width: 879px;
+    height: 496px;
+    margin: 40px auto;
+    position: relative;
+}
+
+
 @media (max-width: 1680px) {
     
     #bloco-bg-slider{
@@ -907,11 +1038,17 @@ background-repeat: no-repeat;
     #topo img{ display: none;}
 }
 
-@media (max-width: 870px) {
-
+@media (max-width:820px) {
+    .podcast-container{
+        transform: scale(0.9);
+        margin-left: -10px;
+    }
 }
-
-@media (max-width: 760px) {
+@media (max-width:780px) {
+    .podcast-container{
+        transform: scale(0.9);
+        margin-left: -40px;
+    }
     .bg-audioplay{
         background-image: none;
         background-color: #00838d;
@@ -926,23 +1063,89 @@ background-repeat: no-repeat;
     .boxC-modal figcaption {
         font-size: 14px;
     }
+    
+    .bloco1-paralax1d, .bloco12-paralax1d, .bloco4-paralax1d,
+    .bloco7-paralax1d, .bloco13-paralax1d,
+    .bloco15-paralax1d, .bloco16-paralax1d{height: 300px;}
+    .bloco16-paralax1c, .bloco16-paralax1b, .bloco16-paralax1a,
+    .bloco1-paralax1c, .bloco1-paralax1b, .bloco1-paralax1a,
+    .bloco12-paralax1c, .bloco12-paralax1b, .bloco12-paralax1a,
+    .bloco4-paralax1c, .bloco4-paralax1b, .bloco4-paralax1a,
+    .bloco7-paralax1c, .bloco7-paralax1b, .bloco7-paralax1a,
+    .bloco13-paralax1c, .bloco13-paralax1b, .bloco13-paralax1a,
+    .bloco15-paralax1c, .bloco15-paralax1b, .bloco15-paralax1a{
+        height: 300px;
+        margin-top: -300px;
+    }
+    .bloco5-pg2{
+        background-size: unset;
+        background-position: center top;
+    }
+    .bloco1-pg5{background-position: center;}
+    .icone.desafio::before{
+        background-size: contain;    
+        left: -35px;
+        width: 145px;
+    }
+    .bloco1-pg1{background-position: -195px center;}
 }
 
-@media (max-width: 1000px) {
-
-}
 
 @media (max-width:500px) {
+    iframe{
+        max-width: 100%;
+    }
+    .sesc-audio-player {
+        margin-left: unset;
+    }
+    .timestamp {
+        color: #333;
+    }
+    .texto-podcast{
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    .podcast-container {
+        transform: scale(1);
+        margin-left: 0px;
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
     .audio-img-us, .audio-img-br {
         width: 60px;
         height: 45px;
         background-size: 120px;
     }
     .audio-img-us:hover, .audio-img-br:hover {background-position: -60px;}
-    img-carimbo::before{
+    .img-carimbo::before{
         bottom:22% ;
     }
-    
+    .bloco1-paralax1d, .bloco12-paralax1d, .bloco4-paralax1d,
+    .bloco7-paralax1d, .bloco13-paralax1d,
+    .bloco15-paralax1d, .bloco16-paralax1d{height: 200px;}
+    .bloco16-paralax1c, .bloco16-paralax1b, .bloco16-paralax1a,
+    .bloco1-paralax1c, .bloco1-paralax1b, .bloco1-paralax1a,
+    .bloco12-paralax1c, .bloco12-paralax1b, .bloco12-paralax1a,
+    .bloco4-paralax1c, .bloco4-paralax1b, .bloco4-paralax1a,
+    .bloco7-paralax1c, .bloco7-paralax1b, .bloco7-paralax1a,
+    .bloco13-paralax1c, .bloco13-paralax1b, .bloco13-paralax1a,
+    .bloco15-paralax1c, .bloco15-paralax1b, .bloco15-paralax1a{
+        height: 200px;
+        margin-top: -200px;
+    }
+    .caixa.icone{padding-left: 30px;}
+    .icone.praticar::before, .icone.dica::before{
+        width: 110px;
+        background-size: contain;
+    }
+    .icone.desafio::before{width: 125px;}
+    .bloco1-pg1{
+        background-image: url('../../img/assets/bg-mobile.jpg');
+        background-position: center;
+    }
+    .bloco1-pg1 .container{background-color: rgba(0,0,0,0.5);}
 }
 .pg-footer a:visited {
     color: #7a7a7a;

@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+
+/* GLOBAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0.5rem;
+}
+
+.titulo {
+    font-family: 'Calistoga', cursive;
+    text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+    color:#333;
+}
+
+:root {
+    --nao-metal: rgb(168, 218, 91);
+    --gas-nobre: rgb(127, 173, 210);
+    --metal-alcalino: rgb(238, 198, 87);
+    --metal-alcalino-terroso: rgb(231, 230, 88);
+    --semimetal: rgb(118, 200, 184);
+    --halogenio: rgb(178, 227, 245);
+    --outros-metais: rgb(161, 206, 206);
+    --metal-transicao: rgb(231, 161, 169);
+    --lantanideo: rgb(155, 225, 215);
+    --actinidio: rgb(223, 179, 214);
+    /* --botao:#7fadd2; */
+
+}
+
+body {
+    font: 1em/1 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1em 5%;
+    background: url(../img/bg2.png) top left / cover no-repeat;
+}
+
+.nao-metal {
+    background-color: var(--nao-metal);
+}
+
+.gas-nobre {
+    background-color: var(--gas-nobre);
+}
+
+.metal-alcalino {
+    background-color: var(--metal-alcalino);
+}
+
+.metal-alcalino-terroso {
+    background-color: var(--metal-alcalino-terroso);
+}
+
+.semimetal {
+    background-color: var(--semimetal);
+}
+
+.halogenio {
+    background-color: var(--halogenio);
+}
+
+.outros-metais {
+    background-color: var(--outros-metais);
+}
+
+.metal-transicao {
+    background-color: var(--metal-transicao);
+}
+
+.lantanideo {
+    background-color: var(--lantanideo);
+}
+
+.actinidio {
+    background-color: var(--actinidio);
+}
+
+
+/* ESTILOS DE TIPOGRAFIA */
+h1 {
+    margin: .5em 0;
+    font-size: calc(3vw + 2rem);
+    font-weight: 100;
+    text-transform: uppercase;
+    color: black;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p:last-child {
+    font-size: .8em;
+}
+
+/* ESTILO CONTAINER */
+
+main {
+    margin: auto;
+    max-width: 45em;
+    display: flex;
+}
+
+#grid-container {
+    flex-grow: 1;
+    min-width: 7em;
+}
+
+.col-hidden {
+    display: none;
+}
+
+.estilo {
+    width: 7em;
+    border: .125rem solid;
+    border-radius: .25rem;
+    line-height: 1.25;
+    margin-bottom: .5em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+span {
+    font-size: .75em;
+    position: absolute;
+    top: .3em;
+    left: .5em;
+}
+
+.espaço {
+    padding: 20%;
+}
+
+.semEfeito {
+    transition: none !important;
+    transform: none !important;
+    cursor: auto !important;
+    z-index: 0;
+    filter: grayscale(70%)
+}
+
+/* FOOTER */
+footer {
+    font-size: .8em;
+    text-align: left;
+    flex-basis: 13.5rem;
+    margin: -.25em 0 0 1em;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 1em;
+}
+
+li {
+    flex-basis: 100%;
+    line-height: 1.25;
+    margin-bottom: 1em;
+}
+
+li::before {
+    content: ' ';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: .725em solid;
+    border-radius: 4.1rem;
+    margin-right: .5em;
+    position: relative;
+    top: .25em;
+}
+
+.nao-metal-font {
+    color: var(--nao-metal);
+}
+
+.gas-nobre-font {
+    color: var(--gas-nobre);
+}
+
+.metal-alcalino-font {
+    color: var(--metal-alcalino);
+}
+
+.metal-alcalino-terroso-font {
+    color: var(--metal-alcalino-terroso);
+}
+
+.semimetal-font {
+    color: var(--semimetal);
+}
+
+.halogenio-font {
+    color: var(--halogenio);
+}
+
+.outros-metais-font {
+    color: var(--outros-metais);
+}
+
+.metal-transicao-font {
+    color: var(--metal-transicao);
+}
+
+.lantanideo-font {
+    color: var(--lantanideo);
+}
+
+.actinidio-font {
+    color: var(--actinidio);
+}
+
+#exibir {
+    display: none;
+}
+
+/*MODAL*/
+
+.modal-header {
+    box-shadow: 1px 4px 5px #adb5bd;
+    color: #2b2b2b;
+}
+
+.black {
+    color: black;
+}
+
+.gif {
+    width: 100%;
+}
+
+.alinhamento {
+    text-align: left;
+}
+
+.esq {
+    left: 24%;
+}
+
+
+@media only screen and (min-width:72.5em) {
+    @supports (display:grid) {
+
+        /* ESTILO GERAL */
+
+        body {
+            font-size: .65em;
+            padding: 2em;
+        }
+
+        /* GRID CONTAINER */
+
+        main {
+            max-width: 130.5em;
+            display: block;
+        }
+
+        #grid-container {
+            display: grid;
+            grid-template-columns: repeat(18, 7em);
+            grid-gap: .25em;
+        }
+
+        .col-span16 {
+            grid-column: span 16;
+        }
+
+        .col-span10 {
+            grid-column: span 10;
+        }
+
+        .col-span3 {
+            grid-column: span 3;
+        }
+
+        .col-hidden {
+            display: block;
+            visibility: hidden;
+        }
+
+        .estilo:hover {
+            transition: .2s;
+            transform: scale(1.5);
+            cursor: pointer;
+            z-index: 2;
+            /* box-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15); */
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            font-size: 1em;
+            width: 100%;
+            margin: 2em 0;
+        }
+
+        ul {
+            justify-content: center;
+        }
+
+        li {
+            flex-basis: auto;
+            margin-bottom: 0;
+        }
+
+        li+li {
+            margin-left: 2em;
+        }
+    }
+}
+
+@media only screen and (min-width:102.5em) {
+
+    body {
+        font-size: .75em;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+        box-sizing: border-box;
+        padding: 0;
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .esq {
+        left: 12%;
+    }
+
+    .semEfeito {
+        display: none;
+    }
+
+    .espaço {
+        display: none;
+    }
+
+    #exibir {
+        padding: 2%;
+        display: block;
+        /* background-color: var(--botao);
+        border:var(--botao); */
+    }
+
+}
+
+@media (max-width: 1080px) {
+    .esq {
+        left: 12%;
+    }
+
+    .semEfeito {
+        display: none;
+    }
+
+    .espaço {
+        display: none;
+        display: block;
+        /* background-color: var(--botao);
+        border:var(--botao); */
+    }
+}

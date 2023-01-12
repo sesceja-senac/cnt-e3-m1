@@ -3,33 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <title>Ciências da natureza e suas tecnologias</title>
+  <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="assets/css/template.css">
   <link rel="stylesheet" href="assetsInicial/style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
 <canvas id="canvas"></canvas>
+
+<img src="assetsInicial/pt2_moldura.png" class="inicial-moldura">
+<img src="assetsInicial/pt3_vidro.png" class="vidro">
+<img src="assetsInicial/pt4_topo.png" class="hudTop" alt="">
+<img src="assetsInicial/pt4_bottom.png" class="hudBottom" alt="">
+
 <div id="hud">
-  
-  <img src="assetsInicial/pt2_moldura.png" style="position: absolute;" alt="">
-  <img src="assetsInicial/pt3_vidro.png" style="position: absolute;" alt="">
-  <div class="hudTop">
-    <img src="assetsInicial/pt4_topo.png" class="hudTop" alt="">
-    <img src="assetsInicial/logo_ciencias.png" class="hudTop" alt="">
-  </div>
-  <div >
-    <img src="assetsInicial/pt4_bottom.png" class="hudBottom" alt="">
-    <img src="assetsInicial/logo_modulo.png" class="hudBottom" alt="">
+  <img src="assetsInicial/logo_ciencias.png" class="logoTop" alt="">
+  <img src="assetsInicial/logo_modulo.png" class="tituloBottom" alt="">
+
+  <div class="modal fade" id="modal-video" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Olá! Antes de começar, assista ao vídeo introdutório sobre o módulo a seguir.</p>
+          <!--aqui vai vídeo-->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="hudConteudo">
-    <a href="conteudo.html?page=1"><img src="assetsInicial/bt_conteudo.png" class="btConteudo" alt=""></a>
-    <a href="conteudo.html?page=3"><img src="assetsInicial/bt_referencias.png" class="btRef" alt=""></a>
-    <a href=""><img src="assetsInicial/bt_video.png" class="btVideo" alt=""></a>
+    <a href="conteudo.html?page=1" class="btConteudo"><span class="visually-hidden">Acesse o conteúdo.</span></a>
+    <a href="conteudo.html?page=3" class="btRef"><span class="visually-hidden">Referências</span></a>
+    <button type="button" class="btVideo" data-bs-toggle="modal" data-bs-target="#modal-video" aria-hidden="true"></button>
   </div>
-
 </div>
 <!-- partial -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
   <script type="module" src="assetsInicial/script.js"></script>
-
+  <script>
+    $(document).ready(function() {
+        $('#modal-video').modal('show');
+    })
+  </script>
 </body>
 </html>

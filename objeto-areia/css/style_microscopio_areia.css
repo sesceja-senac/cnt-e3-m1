@@ -1,0 +1,410 @@
+/**************************************************/
+/********************** capa *********************/
+/************************************************/
+
+.bg {
+    position: relative;
+}
+
+.sobrepor {
+    position: absolute;
+}
+
+.oculto {
+    display: none;
+}
+
+#iniciar {
+    width: 50%;
+    top: 30%;
+    background: url(/img/bgBotaoInicial.png);
+    filter: drop-shadow(18px 17px 10px #AFAFAF);
+}
+
+/************************************************/
+/***************** microscopio *****************/
+/**********************************************/
+
+.areia1 {
+    top: 44rem;
+    left: 68rem;
+    width: 4%;
+}
+
+.areia2 {
+    top: 43.8rem;
+    left: 50rem;
+    width: 5%;
+}
+
+.botao1 {
+    left: 64%;
+    width: 31%;
+    height: 50%;
+    top: 45%;
+    opacity: 0;
+}
+
+.botao2 {
+    left: 39%;
+    width: 24%;
+    height: 93%;
+    top: 2%;
+    opacity: 0;
+}
+
+#seta1 {
+    top: 32rem;
+    left: 71rem;
+    animation: efeitinho 1s infinite alternate;
+}
+
+#seta2 {
+    top: 6rem;
+    left: 60rem;
+    animation: efeitinho 1s infinite alternate;
+}
+
+.some {
+    display: none;
+}
+
+@keyframes efeitinho {
+    from {
+        transform: translateY(40px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+/***********************************************/
+/***************** Tela modal *****************/
+/*********************************************/
+
+.bg-escuro {
+    background-color: #525252;
+}
+
+.btn.btn-primary {
+    background-color: #525252;
+    border: none;
+}
+
+.btn:hover {
+    color: gray;
+    border: 1px solid gray;
+}
+
+.btn.btn-primary::before {
+    content: ' ';
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    border: 0.3em solid;
+    border-radius: 0.3rem;
+    margin-right: .5em;
+    position: relative;
+    top: .25em;
+    color: black;
+}
+
+.titulo {
+    color: white;
+    padding-top: 3%;
+    text-transform: uppercase;
+}
+
+/**************************************************************/
+/************** Reponsividade com media queries **************/
+/************************************************************/
+@media screen and (height: 360px) {
+    @media screen and (width: 800px) {
+
+        .botao1 {
+            left: 31rem;
+            width: 35%;
+            height: 64%;
+            top: 13rem;
+            /* opacity: 0; */
+        }
+
+        .botao2 {
+            left: 39%;
+            width: 34%;
+            height: 103%;
+            top: 20%;
+            /* opacity: 0%; */
+        }
+
+        .areia1 {
+            top: 22.6rem;
+            left: 34rem;
+            width: 4%;
+        }
+
+        .areia2 {
+            top: 21rem;
+            left: 23.8rem;
+            width: 5%;
+        }
+
+        #seta1 {
+            top: 16rem;
+            left: 36rem;
+            animation: efeitinho 1s infinite alternate;
+            width: 9%;
+        }
+
+        #seta2 {
+            top: 4.2rem;
+            left: 29.3rem;
+            animation: efeitinho 1s infinite alternate;
+            width: 9%;
+        }
+
+        .col-9 {
+            flex: 0 0 auto;
+            width: 108%;
+        }
+
+        .btn-group-vertical {
+            flex-direction: row;
+        }
+
+        .modal {
+            --bs-modal-width: 400px;
+        }
+    }
+}
+
+@media screen and (height: 412px) {
+    @media screen and (width: 915px) {
+
+        .botao1 {
+            left: 37rem;
+            width: 35%;
+            height: 64%;
+            top: 13rem;
+        }
+
+        .botao2 {
+            left: 31%;
+            width: 34%;
+            height: 103%;
+            top: 20%;
+        }
+
+        .areia1 {
+            top: 24.3rem;
+            left: 37.5rem;
+            width: 4%;
+        }
+
+        .areia2 {
+            top: 93%;
+            left: 48%;
+            width: 5%;
+        }
+
+        #seta1 {
+            top: 17rem;
+            left: 39rem;
+            animation: efeitinho 1s infinite alternate;
+            width: 9%;
+        }
+
+        #seta2 {
+            top: 5.2rem;
+            left: 33.3rem;
+            animation: efeitinho 1s infinite alternate;
+            width: 9%;
+        }
+
+        .col-9 {
+            flex: 0 0 auto;
+            width: 100%;
+        }
+
+        .btn-group-vertical {
+            flex-direction: row;
+        }
+
+        .modal {
+            --bs-modal-width: 400px;
+        }
+    }
+}
+
+@media screen and (height: 810px) {
+    @media screen and (width: 1080px) {
+
+        .botao1 {
+            left: 42rem;
+            width: 35%;
+            height: 32%;
+            top: 18rem;
+        }
+
+        .botao2 {
+            left: 38%;
+            width: 24%;
+            height: 54%;
+            top: 16%;
+        }
+
+        .areia1 {
+            top: 30.5em;
+            left: 45.9rem;
+            width: 4%;
+        }
+
+        .areia2 {
+            top: 56%;
+            left: 48%;
+            width: 5%;
+        }
+
+        #seta1 {
+            top: 22rem;
+            left: 48rem;
+            animation: efeitinho 1s infinite alternate;
+            width: 9%;
+        }
+
+        #seta2 {
+            top: 8.2rem;
+            left: 39.3rem;
+            animation: efeitinho 1s infinite alternate;
+            width: 9%;
+        }
+
+        .col-9 {
+            flex: 0 0 auto;
+            width: 108%;
+        }
+
+        .btn-group-vertical {
+            flex-direction: row;
+        }
+
+        .modal {
+            --bs-modal-width: 400px;
+        }
+    }
+}
+
+@media screen and (height: 900px) {
+    @media screen and (width: 1440px) {
+
+        .botao1 {
+            left: 58rem;
+            width: 35%;
+            height: 32%;
+            top: 28rem;
+        }
+
+        .botao2 {
+            left: 40%;
+            width: 24%;
+            height: 54%;
+            top: 28%;
+        }
+
+        .areia1 {
+            top: 40.9em;
+            left: 61.6rem;
+            width: 4%;
+        }
+
+        .areia2 {
+            left: 43rem;
+            top: 37.8rem;
+        }
+
+        #seta1 {
+            top: 30rem;
+            left: 64rem;
+            animation: efeitinho 1s infinite alternate;
+            width: 9%;
+        }
+
+        #seta2 {
+            top: 11.2rem;
+            left: 52.3rem;
+            animation: efeitinho 1s infinite alternate;
+            width: 9%;
+        }
+
+        .col-9 {
+            flex: 0 0 auto;
+            width: 108%;
+        }
+
+        .btn-group-vertical {
+            flex-direction: row;
+        }
+
+        .modal {
+            --bs-modal-width: 400px;
+        }
+    }
+}
+
+@media screen and (height: 950px) {
+    @media screen and (width: 1280px) {
+
+        .botao1 {
+            left: 50rem;
+            width: 35%;
+            height: 32%;
+            top: 24rem;
+        }
+
+        .botao2 {
+            left: 39%;
+            width: 24%;
+            height: 54%;
+            top: 15%;
+        }
+
+        .areia1 {
+            top: 36.3rem;
+            left: 54.6rem;
+            width: 4%;
+        }
+
+        .areia2 {
+            top: 56.5%;
+            left: 39rem;
+        }
+
+        #seta1 {
+            top: 26.5rem;
+            left: 57rem;
+            animation: efeitinho 1s infinite alternate;
+            width: 9%;
+        }
+
+        #seta2 {
+            top: 11.2rem;
+            left: 46.3rem;
+            animation: efeitinho 1s infinite alternate;
+            width: 9%;
+        }
+
+        .col-9 {
+            flex: 0 0 auto;
+            width: 108%;
+        }
+
+        .btn-group-vertical {
+            flex-direction: row;
+        }
+
+        .modal {
+            --bs-modal-width: 400px;
+        }
+    }
+}

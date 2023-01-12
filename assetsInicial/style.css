@@ -10,30 +10,119 @@ html, body, canvas {
   display: none !important;
 
 }
-
+#hud{
+  max-width: 1180px;
+  height: 100vh;
+  position: relative;
+  margin: 0 auto;
+}
 .hudTop{
   position: absolute;
   top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
 }
 .hudBottom{
   position: absolute;
   bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+.logoTop{
+  position: absolute;
+  top:0;
+  left:0;
+  max-width: 550px;
+}
+.tituloBottom{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 600px;
 }
 /* .hudConteudo{
   position: absolute;
 } */
 .btConteudo{
+  background: url('../assetsInicial/bt_conteudo.png') left top / 40%;
   position: absolute;
-  right: 30%;
+  right: 10%;
   top: 30%;
+  width: 370px;
+  height: 190px;
+  display: block;
+  background-repeat: no-repeat;
+}
+.btConteudo:hover{
+  background: url('../assetsInicial/bt_conteudo.png') left top / 40%, url('../assetsInicial/tag_hover_conteudo.png') right 40px bottom 20px / 50%;
+  background-repeat: no-repeat;
 }
 .btRef{
+  background: url('../assetsInicial/bt_referencias.png') left top / 40%;
   position: absolute;
-  right: 20%;
-  top: 60%;
+  right: 0;
+  top: 55%;
+  width: 370px;
+  height: 190px;
+  display: block;
+  background-repeat: no-repeat;
+}
+.btRef:hover{
+  background: url('../assetsInicial/bt_referencias.png') left top / 40%, url('../assetsInicial/tag_hover_referencias.png') right 60px bottom 50px / 50%;
+  background-repeat: no-repeat;
 }
 .btVideo{
+  background: url('../assetsInicial/bt_video.png') left top / 50%;
   position: absolute;
-  left: 20%;
-  top: 45%;
+  left: 5%;
+  top: 39%;
+  width: 370px;
+  height: 190px;
+  display: block;
+  background-repeat: no-repeat;
+  border: none;
+}
+.btVideo:hover{
+  background: url('../assetsInicial/bt_video.png') left top / 50%, url('../assetsInicial/tag_hover_video.png') right bottom / 50%;
+  background-repeat: no-repeat;
+}
+.inicial-moldura, .vidro{
+  position: absolute; 
+  max-width: 100%;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+@media screen and (max-width: 980px){
+  .logoTop{top: 13%;}
+  .tituloBottom{bottom: 13%;}
+  .vidro{height: 100%;}
+  .btVideo{
+    background: url('../assetsInicial/bt_video.png') left top, url('../assetsInicial/tag_hover_video.png') right bottom;
+    background-repeat: no-repeat;
+    width: 525px;
+    height: 278px;
+    top: 34%;
+  }
+  .btRef{
+    background: url('../assetsInicial/bt_referencias.png') left top, url('../assetsInicial/tag_hover_referencias.png') right 60px bottom 50px;
+    background-repeat: no-repeat;
+    width: 492px;
+    height: 235px;
+  }
+  .btConteudo{
+    background: url('../assetsInicial/bt_conteudo.png') left top, url('../assetsInicial/tag_hover_conteudo.png') right 40px bottom 20px;
+    background-repeat: no-repeat;
+    width: 482px;
+    height: 256px;
+    top: 24%;
+  }
+  .inicial-moldura{display: none;}
 }
