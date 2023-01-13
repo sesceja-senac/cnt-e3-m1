@@ -1015,10 +1015,109 @@
                                 <p>
                                     É possível extrapolar a composição molecular do solo considerando a composição de cada uma das camadas usando as cores. Passe o <i>mouse</i> em cima das cores para conhecer sua composição química.  
                                 </p>
-                                <div class="painel-clicavel" data-aos="zoom-in">
-                                    <button type="button" class="bt-rosa"></button>
+                                <div class="d-none d-sm-block no-print" aria-hidden="true">
+                                    <div class="painel-clicavel" data-aos="zoom-in">
+                                        <div class="line rosa"><button type="button" class="bt-rosa" data-bs-toggle="modal" data-bs-target="#modal-rosa">Rosa</button></div>
+                                        <div class="line branco"><button type="button" class="bt-branco" data-bs-toggle="modal" data-bs-target="#modal-branco">Branco</button></div>
+                                        <div class="line roxo"><button type="button" class="bt-roxo" data-bs-toggle="modal" data-bs-target="#modal-roxo">Roxo</button></div>
+                                        <div class="line vermelho"><button type="button" class="bt-vermelho" data-bs-toggle="modal" data-bs-target="#modal-vermelho">Vermelho</button></div>
+                                        <div class="line verde"><button type="button" class="bt-verde" data-bs-toggle="modal" data-bs-target="#modal-verde">Verde</button></div>
+                                        <div class="line dourado"><button type="button" class="bt-dourado" data-bs-toggle="modal" data-bs-target="#modal-dourado">Dourado</button></div>
+                                    </div>
+                                
+                                    <div class="modal fade" id="modal-rosa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p><strong>Rosa ou fúcsia</strong>: mescla de argila vermelha, lama e areia. - SiO<sub>2</sub></p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="modal-branco" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p><strong>Branco</strong>: arenito (areia de quartzo) e calcário. - CaCO<sub>3</sub></p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="modal-roxo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p><strong>Roxo ou lavanda</strong>: marga (mistura de argila e carbonato de cálcio) e silicatos. Al<sub>2</sub>O<sub>3</sub>.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="modal-vermelho" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p><strong>Vermelho</strong>: argilitos e argilas. - K, Na, Ca</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="modal-verde" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p><strong>Verde</strong>: argilas ricas em minerais ferromagnesianos (mistura de ferro e magnésio) e óxido de cobre. - CuO</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="modal-dourado" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p><strong>Castanho-amarelado, mostarda ou dourado</strong>: limonites, arenitos calcários ricos em minerais sulfurosos (combinados com enxofre). - FeO(OH) - Ca(SO<sub>4</sub>)</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="only-print">
+                                <div class="d-block d-sm-none">
+                                    <img src="img/assets/modelo_info_bg.png" class="img-fluid center-block my-5">
                                     <ul>
                                         <li><strong>Rosa ou fúcsia</strong>: mescla de argila vermelha, lama e areia. - SiO<sub>2</sub> </li>
                                         <li><strong>Branco</strong>: arenito (areia de quartzo) e calcário. - CaCO<sub>3</sub> </li>
