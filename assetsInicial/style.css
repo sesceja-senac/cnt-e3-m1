@@ -50,7 +50,7 @@ html, body, canvas {
   position: absolute;
 } */
 .btConteudo{
-  background: url('../assetsInicial/bt_conteudo.png') left top / 40%;
+  background: url('../assetsInicial/bt_conteudo.png') left top / 40%, url('../assetsInicial/tag_hover_conteudo.png') right 40px bottom 20px / 50%;
   position: absolute;
   right: 10%;
   top: 30%;
@@ -58,13 +58,13 @@ html, body, canvas {
   height: 190px;
   display: block;
   background-repeat: no-repeat;
+  transition: all .4s;
 }
-.btConteudo:hover{
-  background: url('../assetsInicial/bt_conteudo.png') left top / 40%, url('../assetsInicial/tag_hover_conteudo.png') right 40px bottom 20px / 50%;
-  background-repeat: no-repeat;
+.btConteudo:hover, .btRef:hover, .btVideo:hover{
+  transform: scale(1.1);
 }
 .btRef{
-  background: url('../assetsInicial/bt_referencias.png') left top / 40%;
+  background: url('../assetsInicial/bt_referencias.png') left top / 40%, url('../assetsInicial/tag_hover_referencias.png') right 60px bottom 50px / 50%;
   position: absolute;
   right: 0;
   top: 55%;
@@ -72,13 +72,10 @@ html, body, canvas {
   height: 190px;
   display: block;
   background-repeat: no-repeat;
-}
-.btRef:hover{
-  background: url('../assetsInicial/bt_referencias.png') left top / 40%, url('../assetsInicial/tag_hover_referencias.png') right 60px bottom 50px / 50%;
-  background-repeat: no-repeat;
+  transition: all .4s;
 }
 .btVideo{
-  background: url('../assetsInicial/bt_video.png') left top / 50%;
+  background: url('../assetsInicial/bt_video.png') left top / 50%, url('../assetsInicial/tag_hover_video.png') right bottom / 50%;
   position: absolute;
   left: 5%;
   top: 39%;
@@ -87,10 +84,7 @@ html, body, canvas {
   display: block;
   background-repeat: no-repeat;
   border: none;
-}
-.btVideo:hover{
-  background: url('../assetsInicial/bt_video.png') left top / 50%, url('../assetsInicial/tag_hover_video.png') right bottom / 50%;
-  background-repeat: no-repeat;
+  transition: all .4s;
 }
 .inicial-moldura, .vidro{
   position: absolute; 
