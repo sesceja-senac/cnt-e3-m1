@@ -1,0 +1,83 @@
+.conversor-calendario {
+    border: 5px solid #ff9200;
+    border-radius: 20px;
+    padding: 5px;
+    font-weight: bold;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    text-transform: uppercase;
+}
+.calendario-input:read-only {
+    border: 0px none;
+    background-color: #f2f2f2;
+    pointer-events: none;
+    touch-action: none;
+}
+
+.input-group-text {
+    pointer-events: none;
+    touch-action: none;
+}
+.calendario-select:read-only {
+    border: 0px none;
+    background-color: #f2f2f2;
+    pointer-events: none;
+    touch-action: none;
+}
+.title {
+    background-color: #018085;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-radius:10px;
+    font-weight: bold;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.title-calendario {
+    padding: 5px;
+    /* text-align: center; */
+    color: #ff9200;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: bold;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.btn.btn-primary.cor-botao {
+    background-color: #018085;
+    border-color: #018085;
+}
+
+.btn.btn-primary.cor-botao:hover {
+    background-color: #013031;
+    border-color: #013031;
+}
+.calendarios .row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    flex-wrap: wrap;
+  }
+  .calendarios .row > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+  }
+.gregoriano {
+	color: white;
+	background-color: #ff9200;
+	border-radius: 10px;
+	/* border-radius: 0px 0px 10px 10px; */
+	padding: 30px
+}
+
+.branco{
+    color: white;
+    text-shadow: rgb(44, 44, 44) 0.1em 0.1em 0.2em
+}
