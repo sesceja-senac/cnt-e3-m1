@@ -8,24 +8,10 @@
     box-sizing: border-box;
 }
 
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin-top: 0.5rem;
-}
-
 .titulo {
     font-family: 'Calistoga', cursive;
-    text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
-    color:#333;
+    text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0, 0, 0, 0.15);
+    color: #333;
 }
 
 :root {
@@ -39,16 +25,20 @@ h6 {
     --metal-transicao: rgb(231, 161, 169);
     --lantanideo: rgb(155, 225, 215);
     --actinidio: rgb(223, 179, 214);
-    /* --botao:#7fadd2; */
-
 }
 
-body {
+.body-tabela-periodica {
     font: 1em/1 'Montserrat', sans-serif;
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 1em 5%;
     background: url(../img/bg2.png) top left / cover no-repeat;
+}
+
+.centraliza {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
 .nao-metal {
@@ -91,9 +81,9 @@ body {
     background-color: var(--actinidio);
 }
 
-
 /* ESTILOS DE TIPOGRAFIA */
-h1 {
+.h1-tabela {
+    margin-top: 0.5rem;
     margin: .5em 0;
     font-size: calc(3vw + 2rem);
     font-weight: 100;
@@ -101,23 +91,24 @@ h1 {
     color: black;
 }
 
-h2 {
+.h2-tabela {
+    margin-top: 0.5rem;
     font-size: 2em;
 }
 
-p:last-child {
+.p-tabela:last-child {
     font-size: .8em;
 }
 
 /* ESTILO CONTAINER */
 
-main {
+.tabela-periodica {
     margin: auto;
     max-width: 45em;
     display: flex;
 }
 
-#grid-container {
+#grid-tabela-periodica {
     flex-grow: 1;
     min-width: 7em;
 }
@@ -140,7 +131,7 @@ main {
     font-family: 'Roboto', sans-serif;
 }
 
-span {
+.span-tabela {
     font-size: .75em;
     position: absolute;
     top: .3em;
@@ -160,27 +151,27 @@ span {
 }
 
 /* FOOTER */
-footer {
+.footer-tabela-periodica {
     font-size: .8em;
     text-align: left;
     flex-basis: 13.5rem;
     margin: -.25em 0 0 1em;
 }
 
-ul {
+.ul-tabela-periodica {
     display: flex;
     flex-wrap: wrap;
     position: sticky;
     top: 1em;
 }
 
-li {
+.li-tabela-periodica {
     flex-basis: 100%;
     line-height: 1.25;
     margin-bottom: 1em;
 }
 
-li::before {
+.li-tabela-periodica::before {
     content: ' ';
     display: inline-block;
     width: 1em;
@@ -232,8 +223,10 @@ li::before {
     color: var(--actinidio);
 }
 
-#exibir {
-    display: none;
+.legendaElemento {
+    position: absolute;
+    top: 0;
+    left: 300px;
 }
 
 /*MODAL*/
@@ -247,37 +240,28 @@ li::before {
     color: black;
 }
 
-.gif {
-    width: 100%;
-}
-
 .alinhamento {
     text-align: left;
 }
 
-.esq {
-    left: 24%;
-}
-
-
-@media only screen and (min-width:72.5em) {
+@media only screen and (min-width:1280px) {
     @supports (display:grid) {
 
         /* ESTILO GERAL */
 
-        body {
+        .body-tabela-periodica {
             font-size: .65em;
             padding: 2em;
         }
 
         /* GRID CONTAINER */
 
-        main {
+        .tabela-periodica {
             max-width: 130.5em;
             display: block;
         }
 
-        #grid-container {
+        #grid-tabela-periodica {
             display: grid;
             grid-template-columns: repeat(18, 7em);
             grid-gap: .25em;
@@ -305,23 +289,22 @@ li::before {
             transform: scale(1.5);
             cursor: pointer;
             z-index: 2;
-            /* box-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15); */
             box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
         }
 
         /* FOOTER */
 
-        footer {
+        .footer-tabela-periodica {
             font-size: 1em;
             width: 100%;
             margin: 2em 0;
         }
 
-        ul {
+        .ul-tabela-periodica {
             justify-content: center;
         }
 
-        li {
+        .li-tabela-periodica {
             flex-basis: auto;
             margin-bottom: 0;
         }
@@ -334,22 +317,12 @@ li::before {
 
 @media only screen and (min-width:102.5em) {
 
-    body {
+    .body-tabela-periodica {
         font-size: .75em;
-    }
-
-    input[type="checkbox"],
-    input[type="radio"] {
-        box-sizing: border-box;
-        padding: 0;
-        display: block;
     }
 }
 
 @media (max-width: 480px) {
-    .esq {
-        left: 12%;
-    }
 
     .semEfeito {
         display: none;
@@ -359,19 +332,14 @@ li::before {
         display: none;
     }
 
-    #exibir {
-        padding: 2%;
-        display: block;
-        /* background-color: var(--botao);
-        border:var(--botao); */
+    .legendaElemento {
+        position: relative;
+        left: 0px;
     }
 
 }
 
 @media (max-width: 1080px) {
-    .esq {
-        left: 12%;
-    }
 
     .semEfeito {
         display: none;
@@ -380,7 +348,11 @@ li::before {
     .espaço {
         display: none;
         display: block;
-        /* background-color: var(--botao);
-        border:var(--botao); */
     }
+
+    .legendaElemento {
+        position: relative;
+        left: 0px;
+    }
+
 }

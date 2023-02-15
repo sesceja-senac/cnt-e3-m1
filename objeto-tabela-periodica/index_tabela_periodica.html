@@ -7,657 +7,654 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
-        integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/style_tabela_periodica.css" />
     <title>Tabela Periódica dos Elementos</title>
 </head>
 
-<body>
-    <h1 class="titulo">Tabela Periódica dos Elementos</h1>
-    <main>
+<div class="body-tabela-periodica">
+    <h1 class="h1-tabela titulo">Tabela Periódica dos Elementos</h1>
+    <section id="legenda-tabela" class="position-relative"><img class="img-fluid legendaElemento" src="img/legenda.png"/></section>
+    <main class="tabela-periodica">
         <div id="modaisDosElementos"> </div>
-        <div id="grid-container">
-
-            <!-- LINHA 1 -->
+        <div id="grid-tabela-periodica">
             <button class="nao-metal estilo" id="hidrogenio">
-                <span>1</span>
-                <h2>H</h2>
-                <p>Hidrogênio</p>
-                <p>1</p>
+                <span class="span-tabela">1</span>
+                <h2 class="h2-tabela">H</h2>
+                <p class="p-tabela">Hidrogênio</p>
+                <p class="p-tabela">1</p>
             </button>
 
             <section class="col-hidden col-span16"></section>
 
             <button class="gas-nobre estilo" id="helio">
-                <span>2</span>
-                <h2>He</h2>
-                <p>Hélio</p>
-                <p>4</p>
+                <span class="span-tabela">2</span>
+                <h2 class="h2-tabela">He</h2>
+                <p class="p-tabela">Hélio</p>
+                <p class="p-tabela">4</p>
             </button>
 
             <!-- LINHA 2 -->
             <button class="metal-alcalino estilo" id="litio">
-                <span>3</span>
-                <h2>Li</h2>
-                <p>Lítio</p>
-                <p>7</p>
+                <span class="span-tabela">3</span>
+                <h2 class="h2-tabela">Li</h2>
+                <p class="p-tabela">Lítio</p>
+                <p class="p-tabela">7</p>
             </button>
 
             <button class="metal-alcalino-terroso estilo" id="berilio">
-                <span>4</span>
-                <h2>Be</h2>
-                <p>Berílio</p>
-                <p>9</p>
+                <span class="span-tabela">4</span>
+                <h2 class="h2-tabela">Be</h2>
+                <p class="p-tabela">Berílio</p>
+                <p class="p-tabela">9</p>
             </button>
 
             <section class="col-hidden col-span10"></section>
 
             <button class="semimetal estilo" id="boro">
-                <span>5</span>
-                <h2>B</h2>
-                <p>Boro</p>
-                <p>10</p>
+                <span class="span-tabela">5</span>
+                <h2 class="h2-tabela">B</h2>
+                <p class="p-tabela">Boro</p>
+                <p class="p-tabela">10</p>
             </button>
 
             <button class="nao-metal estilo" id="carbono">
-                <span>6</span>
-                <h2>C</h2>
-                <p>Carbono</p>
-                <p>12</p>
+                <span class="span-tabela">6</span>
+                <h2 class="h2-tabela">C</h2>
+                <p class="p-tabela">Carbono</p>
+                <p class="p-tabela">12</p>
             </button>
 
             <button class="nao-metal estilo" id="nitrogenio">
-                <span>7</span>
-                <h2>N</h2>
-                <p>Nitrogênio</p>
-                <p>14</p>
+                <span class="span-tabela">7</span>
+                <h2 class="h2-tabela">N</h2>
+                <p class="p-tabela">Nitrogênio</p>
+                <p class="p-tabela">14</p>
             </button>
 
             <button class="nao-metal estilo" id="oxigenio">
-                <span>8</span>
-                <h2>O</h2>
-                <p>Oxigênio</p>
-                <p>16</p>
+                <span class="span-tabela">8</span>
+                <h2 class="h2-tabela">O</h2>
+                <p class="p-tabela">Oxigênio</p>
+                <p class="p-tabela">16</p>
             </button>
 
             <button class="halogenio estilo" id="fluor">
-                <span>9</span>
-                <h2>F</h2>
-                <p>Flúor</p>
-                <p>19</p>
+                <span class="span-tabela">9</span>
+                <h2 class="h2-tabela">F</h2>
+                <p class="p-tabela">Flúor</p>
+                <p class="p-tabela">19</p>
             </button>
 
             <button class="gas-nobre estilo" id="neonio">
-                <span>10</span>
-                <h2>Ne</h2>
-                <p>Neônio</p>
-                <p>20</p>
+                <span class="span-tabela">10</span>
+                <h2 class="h2-tabela">Ne</h2>
+                <p class="p-tabela">Neônio</p>
+                <p class="p-tabela">20</p>
             </button>
 
             <!-- LINHA 3 -->
             <button class="metal-alcalino estilo" id="sodio">
-                <span>11</span>
-                <h2>Na</h2>
-                <p>Sódio</p>
-                <p>23</p>
+                <span class="span-tabela">11</span>
+                <h2 class="h2-tabela">Na</h2>
+                <p class="p-tabela">Sódio</p>
+                <p class="p-tabela">23</p>
             </button>
 
             <button class="metal-alcalino-terroso estilo" id="magnesio">
-                <span>12</span>
-                <h2>Mg</h2>
-                <p>Magnésio</p>
-                <p>24,3</p>
+                <span class="span-tabela">12</span>
+                <h2 class="h2-tabela">Mg</h2>
+                <p class="p-tabela">Magnésio</p>
+                <p class="p-tabela">24,3</p>
             </button>
 
             <section class="col-hidden col-span10"></section>
 
             <button class="outros-metais estilo" id="aluminio">
-                <span>13</span>
-                <h2>Al</h2>
-                <p>Alumínio</p>
-                <p>27</p>
+                <span class="span-tabela">13</span>
+                <h2 class="h2-tabela">Al</h2>
+                <p class="p-tabela">Alumínio</p>
+                <p class="p-tabela">27</p>
             </button>
 
             <button class="semimetal estilo" id="silicio">
-                <span>14</span>
-                <h2>Si</h2>
-                <p>Silício</p>
-                <p>28</p>
+                <span class="span-tabela">14</span>
+                <h2 class="h2-tabela">Si</h2>
+                <p class="p-tabela">Silício</p>
+                <p class="p-tabela">28</p>
             </button>
 
             <button class="nao-metal estilo" id="fosforo">
-                <span>15</span>
-                <h2>P</h2>
-                <p>Fósforo</p>
-                <p>31</p>
+                <span class="span-tabela">15</span>
+                <h2 class="h2-tabela">P</h2>
+                <p class="p-tabela">Fósforo</p>
+                <p class="p-tabela">31</p>
             </button>
 
             <button class="nao-metal estilo" id="enxofre">
-                <span>16</span>
-                <h2>S</h2>
-                <p>Enxofre</p>
-                <p>32</p>
+                <span class="span-tabela">16</span>
+                <h2 class="h2-tabela">S</h2>
+                <p class="p-tabela">Enxofre</p>
+                <p class="p-tabela">32</p>
             </button>
 
             <button class="halogenio estilo" id="cloro">
-                <span>17</span>
-                <h2>Cl</h2>
-                <p>Cloro</p>
-                <p>35,4</p>
+                <span class="span-tabela">17</span>
+                <h2 class="h2-tabela">Cl</h2>
+                <p class="p-tabela">Cloro</p>
+                <p class="p-tabela">35,4</p>
             </button>
 
             <button class="gas-nobre estilo" id="argonio">
-                <span>18</span>
-                <h2>Ar</h2>
-                <p>Argônio</p>
-                <p>40</p>
+                <span class="span-tabela">18</span>
+                <h2 class="h2-tabela">Ar</h2>
+                <p class="p-tabela">Argônio</p>
+                <p class="p-tabela">40</p>
             </button>
 
             <!-- LINHA 4 -->
             <button class="metal-alcalino estilo" id="potassio">
-                <span>19</span>
-                <h2>K</h2>
-                <p>Potássio</p>
-                <p>39,1</p>
+                <span class="span-tabela">19</span>
+                <h2 class="h2-tabela">K</h2>
+                <p class="p-tabela">Potássio</p>
+                <p class="p-tabela">39,1</p>
             </button>
 
             <button class="metal-alcalino-terroso estilo" id="calcio">
-                <span>20</span>
-                <h2>Ca</h2>
-                <p>Cálcio</p>
-                <p>40</p>
+                <span class="span-tabela">20</span>
+                <h2 class="h2-tabela">Ca</h2>
+                <p class="p-tabela">Cálcio</p>
+                <p class="p-tabela">40</p>
             </button>
 
             <button class="metal-transicao estilo" id="escandio">
-                <span>21</span>
-                <h2>Sc</h2>
-                <p>Escândio</p>
-                <p>45</p>
+                <span class="span-tabela">21</span>
+                <h2 class="h2-tabela">Sc</h2>
+                <p class="p-tabela">Escândio</p>
+                <p class="p-tabela">45</p>
             </button>
 
             <button class="metal-transicao estilo" id="titanio">
-                <span>22</span>
-                <h2>Ti</h2>
-                <p>Titânio</p>
-                <p>48</p>
+                <span class="span-tabela">22</span>
+                <h2 class="h2-tabela">Ti</h2>
+                <p class="p-tabela">Titânio</p>
+                <p class="p-tabela">48</p>
             </button>
 
             <button class="metal-transicao estilo" id="vanadio">
-                <span>23</span>
-                <h2>V</h2>
-                <p>Vanádio</p>
-                <p>51</p>
+                <span class="span-tabela">23</span>
+                <h2 class="h2-tabela">V</h2>
+                <p class="p-tabela">Vanádio</p>
+                <p class="p-tabela">51</p>
             </button>
 
             <button class="metal-transicao estilo" id="cromo">
-                <span>24</span>
-                <h2>Cr</h2>
-                <p>Cromo</p>
-                <p>52</p>
+                <span class="span-tabela">24</span>
+                <h2 class="h2-tabela">Cr</h2>
+                <p class="p-tabela">Cromo</p>
+                <p class="p-tabela">52</p>
             </button>
 
             <button class="metal-transicao estilo" id="manganes">
-                <span>25</span>
-                <h2>Mn</h2>
-                <p>Manganês</p>
-                <p>55</p>
+                <span class="span-tabela">25</span>
+                <h2 class="h2-tabela">Mn</h2>
+                <p class="p-tabela">Manganês</p>
+                <p class="p-tabela">55</p>
             </button>
 
             <button class="metal-transicao estilo" id="ferro">
-                <span>26</span>
-                <h2>Fe</h2>
-                <p>Ferro</p>
-                <p>56</p>
+                <span class="span-tabela">26</span>
+                <h2 class="h2-tabela">Fe</h2>
+                <p class="p-tabela">Ferro</p>
+                <p class="p-tabela">56</p>
             </button>
 
             <button class="metal-transicao estilo" id="cobalto">
-                <span>27</span>
-                <h2>Co</h2>
-                <p>Cobalto</p>
-                <p>59</p>
+                <span class="span-tabela">27</span>
+                <h2 class="h2-tabela">Co</h2>
+                <p class="p-tabela">Cobalto</p>
+                <p class="p-tabela">59</p>
             </button>
 
             <button class="metal-transicao estilo" id="niquel">
-                <span>28</span>
-                <h2>Ni</h2>
-                <p>Níquel</p>
-                <p>58,6</p>
+                <span class="span-tabela">28</span>
+                <h2 class="h2-tabela">Ni</h2>
+                <p class="p-tabela">Níquel</p>
+                <p class="p-tabela">58,6</p>
             </button>
 
             <button class="metal-transicao estilo" id="cobre">
-                <span>29</span>
-                <h2>Cu</h2>
-                <p>Cobre</p>
-                <p>63,5</p>
+                <span class="span-tabela">29</span>
+                <h2 class="h2-tabela">Cu</h2>
+                <p class="p-tabela">Cobre</p>
+                <p class="p-tabela">63,5</p>
             </button>
 
             <button class="metal-transicao estilo" id="zinco">
-                <span>30</span>
-                <h2>Zn</h2>
-                <p>Zinco</p>
-                <p>65,4</p>
+                <span class="span-tabela">30</span>
+                <h2 class="h2-tabela">Zn</h2>
+                <p class="p-tabela">Zinco</p>
+                <p class="p-tabela">65,4</p>
             </button>
 
             <button class="outros-metais estilo" id="galio">
-                <span>31</span>
-                <h2>Ga</h2>
-                <p>Gálio</p>
-                <p>69,7</p>
+                <span class="span-tabela">31</span>
+                <h2 class="h2-tabela">Ga</h2>
+                <p class="p-tabela">Gálio</p>
+                <p class="p-tabela">69,7</p>
             </button>
 
             <button class="semimetal estilo" id="germanio">
-                <span>32</span>
-                <h2>Ge</h2>
-                <p>Germânio</p>
-                <p>72,7</p>
+                <span class="span-tabela">32</span>
+                <h2 class="h2-tabela">Ge</h2>
+                <p class="p-tabela">Germânio</p>
+                <p class="p-tabela">72,7</p>
             </button>
 
             <button class="semimetal estilo" id="arsenio">
-                <span>33</span>
-                <h2>As</h2>
-                <p>Arsênio</p>
-                <p>75</p>
+                <span class="span-tabela">33</span>
+                <h2 class="h2-tabela">As</h2>
+                <p class="p-tabela">Arsênio</p>
+                <p class="p-tabela">75</p>
             </button>
 
             <button class="nao-metal estilo" id="selenio">
-                <span>34</span>
-                <h2>Se</h2>
-                <p>Selênio</p>
-                <p>79</p>
+                <span class="span-tabela">34</span>
+                <h2 class="h2-tabela">Se</h2>
+                <p class="p-tabela">Selênio</p>
+                <p class="p-tabela">79</p>
             </button>
 
             <button class="halogenio estilo" id="bromo">
-                <span>35</span>
-                <h2>Br</h2>
-                <p>Bromo</p>
-                <p>80</p>
+                <span class="span-tabela">35</span>
+                <h2 class="h2-tabela">Br</h2>
+                <p class="p-tabela">Bromo</p>
+                <p class="p-tabela">80</p>
             </button>
 
             <button class="gas-nobre estilo" id="criptonio">
-                <span>36</span>
-                <h2>Kr</h2>
-                <p>Criptônio</p>
-                <p>83,8</p>
+                <span class="span-tabela">36</span>
+                <h2 class="h2-tabela">Kr</h2>
+                <p class="p-tabela">Criptônio</p>
+                <p class="p-tabela">83,8</p>
             </button>
 
             <!-- LINHA 5 -->
             <button class="metal-alcalino estilo" id="rubidio">
-                <span>37</span>
-                <h2>Rb</h2>
-                <p>Rubídio</p>
-                <p>85,5</p>
+                <span class="span-tabela">37</span>
+                <h2 class="h2-tabela">Rb</h2>
+                <p class="p-tabela">Rubídio</p>
+                <p class="p-tabela">85,5</p>
             </button>
 
             <button class="metal-alcalino-terroso estilo" id="estroncio">
-                <span>38</span>
-                <h2>Sr</h2>
-                <p>Estrôncio</p>
-                <p>87,6</p>
+                <span class="span-tabela">38</span>
+                <h2 class="h2-tabela">Sr</h2>
+                <p class="p-tabela">Estrôncio</p>
+                <p class="p-tabela">87,6</p>
             </button>
 
             <button class="metal-transicao estilo" id="itrio">
-                <span>39</span>
-                <h2>Y</h2>
-                <p>Ítrio</p>
-                <p>89</p>
+                <span class="span-tabela">39</span>
+                <h2 class="h2-tabela">Y</h2>
+                <p class="p-tabela">Ítrio</p>
+                <p class="p-tabela">89</p>
             </button>
 
             <button class="metal-transicao estilo" id="zirconio">
-                <span>40</span>
-                <h2>Zr</h2>
-                <p>Zircônio</p>
-                <p>91</p>
+                <span class="span-tabela">40</span>
+                <h2 class="h2-tabela">Zr</h2>
+                <p class="p-tabela">Zircônio</p>
+                <p class="p-tabela">91</p>
             </button>
 
             <button class="metal-transicao estilo" id="niobio">
-                <span>41</span>
-                <h2>Nb</h2>
-                <p>Nióbio</p>
-                <p>93</p>
+                <span class="span-tabela">41</span>
+                <h2 class="h2-tabela">Nb</h2>
+                <p class="p-tabela">Nióbio</p>
+                <p class="p-tabela">93</p>
             </button>
 
             <button class="metal-transicao estilo" id="molibdenio">
-                <span>42</span>
-                <h2>Mo</h2>
-                <p>Molibdênio</p>
-                <p>96</p>
+                <span class="span-tabela">42</span>
+                <h2 class="h2-tabela">Mo</h2>
+                <p class="p-tabela">Molibdênio</p>
+                <p class="p-tabela">96</p>
             </button>
 
             <button class="metal-transicao estilo" id="tecnecio">
-                <span>43</span>
-                <h2>Tc</h2>
-                <p>Tecnécio</p>
-                <p>98</p>
+                <span class="span-tabela">43</span>
+                <h2 class="h2-tabela">Tc</h2>
+                <p class="p-tabela">Tecnécio</p>
+                <p class="p-tabela">98</p>
             </button>
 
             <button class="metal-transicao estilo" id="rutenio">
-                <span>44</span>
-                <h2>Ru</h2>
-                <p>Rutênio</p>
-                <p>101</p>
+                <span class="span-tabela">44</span>
+                <h2 class="h2-tabela">Ru</h2>
+                <p class="p-tabela">Rutênio</p>
+                <p class="p-tabela">101</p>
             </button>
 
             <button class="metal-transicao estilo" id="rodio">
-                <span>45</span>
-                <h2>Rh</h2>
-                <p>Ródio</p>
-                <p>103</p>
+                <span class="span-tabela">45</span>
+                <h2 class="h2-tabela">Rh</h2>
+                <p class="p-tabela">Ródio</p>
+                <p class="p-tabela">103</p>
             </button>
 
             <button class="metal-transicao estilo" id="paladio">
-                <span>46</span>
-                <h2>Pd</h2>
-                <p>Paládio</p>
-                <p>106,4</p>
+                <span class="span-tabela">46</span>
+                <h2 class="h2-tabela">Pd</h2>
+                <p class="p-tabela">Paládio</p>
+                <p class="p-tabela">106,4</p>
             </button>
 
             <button class="metal-transicao estilo" id="prata">
-                <span>47</span>
-                <h2>Ag</h2>
-                <p>Prata</p>
-                <p>108</p>
+                <span class="span-tabela">47</span>
+                <h2 class="h2-tabela">Ag</h2>
+                <p class="p-tabela">Prata</p>
+                <p class="p-tabela">108</p>
             </button>
 
             <button class="metal-transicao estilo" id="cadmio">
-                <span>48</span>
-                <h2>Cd</h2>
-                <p>Cádmio</p>
-                <p>112,4</p>
+                <span class="span-tabela">48</span>
+                <h2 class="h2-tabela">Cd</h2>
+                <p class="p-tabela">Cádmio</p>
+                <p class="p-tabela">112,4</p>
             </button>
 
             <button class="outros-metais estilo" id="indio">
-                <span>49</span>
-                <h2>In</h2>
-                <p>Índio</p>
-                <p>115</p>
+                <span class="span-tabela">49</span>
+                <h2 class="h2-tabela">In</h2>
+                <p class="p-tabela">Índio</p>
+                <p class="p-tabela">115</p>
             </button>
 
             <button class="outros-metais estilo" id="estanho">
-                <span>50</span>
-                <h2>Sn</h2>
-                <p>Estanho</p>
-                <p>118,7</p>
+                <span class="span-tabela">50</span>
+                <h2 class="h2-tabela">Sn</h2>
+                <p class="p-tabela">Estanho</p>
+                <p class="p-tabela">118,7</p>
             </button>
 
             <button class="semimetal estilo" id="antimonio">
-                <span>51</span>
-                <h2>Sb</h2>
-                <p>Antimônio</p>
-                <p>121,7</p>
+                <span class="span-tabela">51</span>
+                <h2 class="h2-tabela">Sb</h2>
+                <p class="p-tabela">Antimônio</p>
+                <p class="p-tabela">121,7</p>
             </button>
 
             <button class="semimetal estilo" id="telurio">
-                <span>52</span>
-                <h2>Te</h2>
-                <p>Telúrio</p>
-                <p>127,6</p>
+                <span class="span-tabela">52</span>
+                <h2 class="h2-tabela">Te</h2>
+                <p class="p-tabela">Telúrio</p>
+                <p class="p-tabela">127,6</p>
             </button>
 
             <button class="halogenio estilo" id="iodo">
-                <span>53</span>
-                <h2>I</h2>
-                <p>Iodo</p>
-                <p>127</p>
+                <span class="span-tabela">53</span>
+                <h2 class="h2-tabela">I</h2>
+                <p class="p-tabela">Iodo</p>
+                <p class="p-tabela">127</p>
             </button>
 
             <button class="gas-nobre estilo" id="xenonio">
-                <span>54</span>
-                <h2>Xe</h2>
-                <p>Xenônio</p>
-                <p>131</p>
+                <span class="span-tabela">54</span>
+                <h2 class="h2-tabela">Xe</h2>
+                <p class="p-tabela">Xenônio</p>
+                <p class="p-tabela">131</p>
             </button>
 
             <!-- LINHA 6 -->
             <button class="metal-alcalino estilo" id="cesio">
-                <span>55</span>
-                <h2>Cs</h2>
-                <p>Césio</p>
-                <p>133</p>
+                <span class="span-tabela">55</span>
+                <h2 class="h2-tabela">Cs</h2>
+                <p class="p-tabela">Césio</p>
+                <p class="p-tabela">133</p>
             </button>
 
             <button class="metal-alcalino-terroso estilo" id="bario">
-                <span>56</span>
-                <h2>Ba</h2>
-                <p>Bário</p>
-                <p>137</p>
+                <span class="span-tabela">56</span>
+                <h2 class="h2-tabela">Ba</h2>
+                <p class="p-tabela">Bário</p>
+                <p class="p-tabela">137</p>
             </button>
 
             <button class="lantanideo estilo semEfeito" disabled id="lacuna">
-                <span>57 - 71</span>
-                <h2>* *</h2>
+                <span class="span-tabela">57 - 71</span>
+                <h2 class="h2-tabela">* *</h2>
             </button>
 
             <button class="metal-transicao estilo" id="hafnio">
-                <span>72</span>
-                <h2>Hf</h2>
-                <p>Háfnio</p>
-                <p>178,5</p>
+                <span class="span-tabela">72</span>
+                <h2 class="h2-tabela">Hf</h2>
+                <p class="p-tabela">Háfnio</p>
+                <p class="p-tabela">178,5</p>
             </button>
 
             <button class="metal-transicao estilo" id="tantalo">
-                <span>73</span>
-                <h2>Ta</h2>
-                <p>Tântalo</p>
-                <p>181</p>
+                <span class="span-tabela">73</span>
+                <h2 class="h2-tabela">Ta</h2>
+                <p class="p-tabela">Tântalo</p>
+                <p class="p-tabela">181</p>
             </button>
 
             <button class="metal-transicao estilo" id="tungstenio">
-                <span>74</span>
-                <h2>W</h2>
-                <p>Tungstênio</p>
-                <p>184</p>
+                <span class="span-tabela">74</span>
+                <h2 class="h2-tabela">W</h2>
+                <p class="p-tabela">Tungstênio</p>
+                <p class="p-tabela">184</p>
             </button>
 
             <button class="metal-transicao estilo" id="renio">
-                <span>75</span>
-                <h2>Re</h2>
-                <p>Rênio</p>
-                <p>186</p>
+                <span class="span-tabela">75</span>
+                <h2 class="h2-tabela">Re</h2>
+                <p class="p-tabela">Rênio</p>
+                <p class="p-tabela">186</p>
             </button>
 
             <button class="metal-transicao estilo" id="osmio">
-                <span>76</span>
-                <h2>Os</h2>
-                <p>Ósmio</p>
-                <p>190</p>
+                <span class="span-tabela">76</span>
+                <h2 class="h2-tabela">Os</h2>
+                <p class="p-tabela">Ósmio</p>
+                <p class="p-tabela">190</p>
             </button>
 
             <button class="metal-transicao estilo" id="iridio">
-                <span>77</span>
-                <h2>Ir</h2>
-                <p>Irídio</p>
-                <p>192</p>
+                <span class="span-tabela">77</span>
+                <h2 class="h2-tabela">Ir</h2>
+                <p class="p-tabela">Irídio</p>
+                <p class="p-tabela">192</p>
             </button>
 
             <button class="metal-transicao estilo" id="platina">
-                <span>78</span>
-                <h2>Pt</h2>
-                <p>Platina</p>
-                <p>195</p>
+                <span class="span-tabela">78</span>
+                <h2 class="h2-tabela">Pt</h2>
+                <p class="p-tabela">Platina</p>
+                <p class="p-tabela">195</p>
             </button>
 
             <button class="metal-transicao estilo" id="ouro">
-                <span>79</span>
-                <h2>Au</h2>
-                <p>Ouro</p>
-                <p>197</p>
+                <span class="span-tabela">79</span>
+                <h2 class="h2-tabela">Au</h2>
+                <p class="p-tabela">Ouro</p>
+                <p class="p-tabela">197</p>
             </button>
 
             <button class="metal-transicao estilo" id="mercurio">
-                <span>80</span>
-                <h2>Hg</h2>
-                <p>Mercúrio</p>
-                <p>200</p>
+                <span class="span-tabela">80</span>
+                <h2 class="h2-tabela">Hg</h2>
+                <p class="p-tabela">Mercúrio</p>
+                <p class="p-tabela">200</p>
             </button>
 
             <button class="outros-metais estilo" id="talio">
-                <span>81</span>
-                <h2>Tl</h2>
-                <p>Tálio</p>
-                <p>204</p>
+                <span class="span-tabela">81</span>
+                <h2 class="h2-tabela">Tl</h2>
+                <p class="p-tabela">Tálio</p>
+                <p class="p-tabela">204</p>
             </button>
 
             <button class="outros-metais estilo" id="chumbo">
-                <span>82</span>
-                <h2>Pb</h2>
-                <p>Chumbo</p>
-                <p>207</p>
+                <span class="span-tabela">82</span>
+                <h2 class="h2-tabela">Pb</h2>
+                <p class="p-tabela">Chumbo</p>
+                <p class="p-tabela">207</p>
             </button>
 
             <button class="outros-metais estilo" id="bismuto">
-                <span>83</span>
-                <h2>Bi</h2>
-                <p>Bismuto</p>
-                <p>209</p>
+                <span class="span-tabela">83</span>
+                <h2 class="h2-tabela">Bi</h2>
+                <p class="p-tabela">Bismuto</p>
+                <p class="p-tabela">209</p>
             </button>
 
             <button class="semimetal estilo" id="polonio">
-                <span>84</span>
-                <h2>Po</h2>
-                <p>Polônio</p>
-                <p>209</p>
+                <span class="span-tabela">84</span>
+                <h2 class="h2-tabela">Po</h2>
+                <p class="p-tabela">Polônio</p>
+                <p class="p-tabela">209</p>
             </button>
 
             <button class="halogenio estilo" id="astato">
-                <span>85</span>
-                <h2>At</h2>
-                <p>Ástato</p>
-                <p>210</p>
+                <span class="span-tabela">85</span>
+                <h2 class="h2-tabela">At</h2>
+                <p class="p-tabela">Ástato</p>
+                <p class="p-tabela">210</p>
             </button>
 
             <button class="gas-nobre estilo" id="radonio">
-                <span>86</span>
-                <h2>Rn</h2>
-                <p>Radônio</p>
-                <p>222</p>
+                <span class="span-tabela">86</span>
+                <h2 class="h2-tabela">Rn</h2>
+                <p class="p-tabela">Radônio</p>
+                <p class="p-tabela">222</p>
             </button>
 
             <!-- LINHA 7 -->
             <button class="metal-alcalino estilo" id="francio">
-                <span>87</span>
-                <h2>Fr</h2>
-                <p>Frâncio</p>
-                <p>223</p>
+                <span class="span-tabela">87</span>
+                <h2 class="h2-tabela">Fr</h2>
+                <p class="p-tabela">Frâncio</p>
+                <p class="p-tabela">223</p>
             </button>
 
             <button class="metal-alcalino-terroso estilo" id="radio">
-                <span>88</span>
-                <h2>Ra</h2>
-                <p>Rádio</p>
-                <p>226</p>
+                <span class="span-tabela">88</span>
+                <h2 class="h2-tabela">Ra</h2>
+                <p class="p-tabela">Rádio</p>
+                <p class="p-tabela">226</p>
             </button>
 
             <button class="actinidio estilo semEfeito" disabled id="locuna2">
-                <span>89 - 103</span>
-                <h2>* *</h2>
+                <span class="span-tabela">89 - 103</span>
+                <h2 class="h2-tabela">* *</h2>
             </button>
 
             <button class="metal-transicao estilo semEfeito" id="rutherfordio" disabled>
-                <span>104</span>
-                <h2>Rf</h2>
-                <p>Rutherfórdio</p>
-                <p>267</p>
+                <span class="span-tabela">104</span>
+                <h2 class="h2-tabela">Rf</h2>
+                <p class="p-tabela">Rutherfórdio</p>
+                <p class="p-tabela">267</p>
             </button>
 
             <button class="metal-transicao estilo semEfeito" id="dubnio" disabled>
-                <span>105</span>
-                <h2>Db</h2>
-                <p>Dúbnio</p>
-                <p>262</p>
+                <span class="span-tabela">105</span>
+                <h2 class="h2-tabela">Db</h2>
+                <p class="p-tabela">Dúbnio</p>
+                <p class="p-tabela">262</p>
             </button>
 
             <button class="metal-transicao estilo semEfeito" id="seaborgio" disabled>
-                <span>106</span>
-                <h2>Sg</h2>
-                <p>Seabórgio</p>
-                <p>266</p>
+                <span class="span-tabela">106</span>
+                <h2 class="h2-tabela">Sg</h2>
+                <p class="p-tabela">Seabórgio</p>
+                <p class="p-tabela">266</p>
             </button>
 
             <button class="metal-transicao estilo semEfeito" id="bohrio" disabled>
-                <span>107</span>
-                <h2>Bh</h2>
-                <p>Bóhrio</p>
-                <p>264</p>
+                <span class="span-tabela">107</span>
+                <h2 class="h2-tabela">Bh</h2>
+                <p class="p-tabela">Bóhrio</p>
+                <p class="p-tabela">264</p>
             </button>
 
             <button class="metal-transicao estilo semEfeito" id="hassio" disabled>
-                <span>108</span>
-                <h2>Hs</h2>
-                <p>Hássio</p>
-                <p>269</p>
+                <span class="span-tabela">108</span>
+                <h2 class="h2-tabela">Hs</h2>
+                <p class="p-tabela">Hássio</p>
+                <p class="p-tabela">269</p>
             </button>
 
             <button class="metal-transicao estilo semEfeito" id="meitnerio" disabled>
-                <span>109</span>
-                <h2>Mt</h2>
-                <p>Meitnério</p>
-                <p>268</p>
+                <span class="span-tabela">109</span>
+                <h2 class="h2-tabela">Mt</h2>
+                <p class="p-tabela">Meitnério</p>
+                <p class="p-tabela">268</p>
             </button>
 
             <button class="metal-transicao estilo semEfeito" id="darmstadtio" disabled>
-                <span>110</span>
-                <h2>Ds</h2>
-                <p>Darmstádtio</p>
-                <p>281</p>
+                <span class="span-tabela">110</span>
+                <h2 class="h2-tabela">Ds</h2>
+                <p class="p-tabela">Darmstádtio</p>
+                <p class="p-tabela">281</p>
             </button>
 
             <button class="metal-transicao estilo semEfeito" id="roentgenio" disabled>
-                <span>111</span>
-                <h2>Rg</h2>
-                <p>Roentgênio</p>
-                <p>281</p>
+                <span class="span-tabela">111</span>
+                <h2 class="h2-tabela">Rg</h2>
+                <p class="p-tabela">Roentgênio</p>
+                <p class="p-tabela">281</p>
             </button>
 
             <button class="metal-transicao estilo semEfeito" id="copernicio" disabled>
-                <span>112</span>
-                <h2>Cn</h2>
-                <p>Copernício</p>
-                <p>285</p>
+                <span class="span-tabela">112</span>
+                <h2 class="h2-tabela">Cn</h2>
+                <p class="p-tabela">Copernício</p>
+                <p class="p-tabela">285</p>
             </button>
 
             <button class="outros-metais estilo semEfeito" id="nihonio" disabled>
-                <span>113</span>
-                <h2>Nh</h2>
-                <p>Nihônio</p>
-                <p>286</p>
+                <span class="span-tabela">113</span>
+                <h2 class="h2-tabela">Nh</h2>
+                <p class="p-tabela">Nihônio</p>
+                <p class="p-tabela">286</p>
             </button>
 
             <button class="outros-metais estilo semEfeito" id="felovio" disabled>
-                <span>114</span>
-                <h2>Fl</h2>
-                <p>Felóvio</p>
-                <p>289</p>
+                <span class="span-tabela">114</span>
+                <h2 class="h2-tabela">Fl</h2>
+                <p class="p-tabela">Felóvio</p>
+                <p class="p-tabela">289</p>
             </button>
 
             <button class="outros-metais estilo semEfeito" id="moscovio" disabled>
-                <span>115</span>
-                <h2>MC</h2>
-                <p>Moscóvio</p>
-                <p>288</p>
+                <span class="span-tabela">115</span>
+                <h2 class="h2-tabela">MC</h2>
+                <p class="p-tabela">Moscóvio</p>
+                <p class="p-tabela">288</p>
             </button>
 
             <button class="outros-metais estilo semEfeito" id="livermorio" disabled>
-                <span>116</span>
-                <h2>Lv</h2>
-                <p>Livermório</p>
-                <p>293</p>
+                <span class="span-tabela">116</span>
+                <h2 class="h2-tabela">Lv</h2>
+                <p class="p-tabela">Livermório</p>
+                <p class="p-tabela">293</p>
             </button>
 
             <button class="halogenio estilo semEfeito" id="tenessino" disabled>
-                <span>117</span>
-                <h2>Ts</h2>
-                <p>Tenessino</p>
-                <p>294</p>
+                <span class="span-tabela">117</span>
+                <h2 class="h2-tabela">Ts</h2>
+                <p class="p-tabela">Tenessino</p>
+                <p class="p-tabela">294</p>
             </button>
 
             <button class="gas-nobre estilo semEfeito" id="oganessonio" disabled>
-                <span>118</span>
-                <h2>Og</h2>
-                <p>Oganessônio</p>
-                <p>294</p>
+                <span class="span-tabela">118</span>
+                <h2 class="h2-tabela">Og</h2>
+                <p class="p-tabela">Oganessônio</p>
+                <p class="p-tabela">294</p>
             </button>
 
             <!-- LINHA VAZIA -->
@@ -683,250 +680,243 @@
             <!-- LINHA 8 -->
             <section class="col-hidden col-span3"></section>
             <button class="lantanideo estilo" id="lantanio">
-                <span>57</span>
-                <h2>La</h2>
-                <p>Lantânio</p>
-                <p>139</p>
+                <span class="span-tabela">57</span>
+                <h2 class="h2-tabela">La</h2>
+                <p class="p-tabela">Lantânio</p>
+                <p class="p-tabela">139</p>
             </button>
 
             <button class="lantanideo estilo" id="cerio">
-                <span>58</span>
-                <h2>Ce</h2>
-                <p>Cério</p>
-                <p>140</p>
+                <span class="span-tabela">58</span>
+                <h2 class="h2-tabela">Ce</h2>
+                <p class="p-tabela">Cério</p>
+                <p class="p-tabela">140</p>
             </button>
 
             <button class="lantanideo estilo" id="praseodimio">
-                <span>59</span>
-                <h2>Pr</h2>
-                <p>Praseodímio</p>
-                <p>141</p>
+                <span class="span-tabela">59</span>
+                <h2 class="h2-tabela">Pr</h2>
+                <p class="p-tabela">Praseodímio</p>
+                <p class="p-tabela">141</p>
             </button>
 
             <button class="lantanideo estilo" id="neodimio">
-                <span>60</span>
-                <h2>Nd</h2>
-                <p>Neodímio</p>
-                <p>144</p>
+                <span class="span-tabela">60</span>
+                <h2 class="h2-tabela">Nd</h2>
+                <p class="p-tabela">Neodímio</p>
+                <p class="p-tabela">144</p>
             </button>
 
             <button class="lantanideo estilo" id="promecio">
-                <span>61</span>
-                <h2>Pm</h2>
-                <p>Promécio</p>
-                <p>145</p>
+                <span class="span-tabela">61</span>
+                <h2 class="h2-tabela">Pm</h2>
+                <p class="p-tabela">Promécio</p>
+                <p class="p-tabela">145</p>
             </button>
 
             <button class="lantanideo estilo" id="samario">
-                <span>62</span>
-                <h2>Sm</h2>
-                <p>Samário</p>
-                <p>150</p>
+                <span class="span-tabela">62</span>
+                <h2 class="h2-tabela">Sm</h2>
+                <p class="p-tabela">Samário</p>
+                <p class="p-tabela">150</p>
             </button>
 
             <button class="lantanideo estilo" id="europio">
-                <span>63</span>
-                <h2>Eu</h2>
-                <p>Európio</p>
-                <p>152</p>
+                <span class="span-tabela">63</span>
+                <h2 class="h2-tabela">Eu</h2>
+                <p class="p-tabela">Európio</p>
+                <p class="p-tabela">152</p>
             </button>
 
             <button class="lantanideo estilo" id="gadolinio">
-                <span>64</span>
-                <h2>Gd</h2>
-                <p>Gadolínio</p>
-                <p>157</p>
+                <span class="span-tabela">64</span>
+                <h2 class="h2-tabela">Gd</h2>
+                <p class="p-tabela">Gadolínio</p>
+                <p class="p-tabela">157</p>
             </button>
 
             <button class="lantanideo estilo" id="terbio">
-                <span>65</span>
-                <h2>Tb</h2>
-                <p>Térbio</p>
-                <p>159</p>
+                <span class="span-tabela">65</span>
+                <h2 class="h2-tabela">Tb</h2>
+                <p class="p-tabela">Térbio</p>
+                <p class="p-tabela">159</p>
             </button>
 
             <button class="lantanideo estilo" id="disprosio">
-                <span>66</span>
-                <h2>Dy</h2>
-                <p>Disprósio</p>
-                <p>162,5</p>
+                <span class="span-tabela">66</span>
+                <h2 class="h2-tabela">Dy</h2>
+                <p class="p-tabela">Disprósio</p>
+                <p class="p-tabela">162,5</p>
             </button>
 
             <button class="lantanideo estilo" id="holmio">
-                <span>67</span>
-                <h2>Ho</h2>
-                <p>Hólmio</p>
-                <p>165</p>
+                <span class="span-tabela">67</span>
+                <h2 class="h2-tabela">Ho</h2>
+                <p class="p-tabela">Hólmio</p>
+                <p class="p-tabela">165</p>
             </button>
 
             <button class="lantanideo estilo" id="erbio">
-                <span>68</span>
-                <h2>Er</h2>
-                <p>Érbio</p>
-                <p>167</p>
+                <span class="span-tabela">68</span>
+                <h2 class="h2-tabela">Er</h2>
+                <p class="p-tabela">Érbio</p>
+                <p class="p-tabela">167</p>
             </button>
 
             <button class="lantanideo estilo" id="tulio">
-                <span>69</span>
-                <h2>Tm</h2>
-                <p>Túlio</p>
-                <p>169</p>
+                <span class="span-tabela">69</span>
+                <h2 class="h2-tabela">Tm</h2>
+                <p class="p-tabela">Túlio</p>
+                <p class="p-tabela">169</p>
             </button>
 
             <button class="lantanideo estilo" id="iterbio">
-                <span>70</span>
-                <h2>Yb</h2>
-                <p>Itérbio</p>
-                <p>173</p>
+                <span class="span-tabela">70</span>
+                <h2 class="h2-tabela">Yb</h2>
+                <p class="p-tabela">Itérbio</p>
+                <p class="p-tabela">173</p>
             </button>
 
             <button class="lantanideo estilo" id="lutecio">
-                <span>71</span>
-                <h2>Lu</h2>
-                <p>Lutécio</p>
-                <p>175</p>
+                <span class="span-tabela">71</span>
+                <h2 class="h2-tabela">Lu</h2>
+                <p class="p-tabela">Lutécio</p>
+                <p class="p-tabela">175</p>
             </button>
 
             <!-- LINHA 9 -->
             <section class="col-hidden col-span3"></section>
 
             <button class="actinidio estilo" id="actinio">
-                <span>89</span>
-                <h2>Ac</h2>
-                <p>Actínio</p>
-                <p>227</p>
+                <span class="span-tabela">89</span>
+                <h2 class="h2-tabela">Ac</h2>
+                <p class="p-tabela">Actínio</p>
+                <p class="p-tabela">227</p>
             </button>
 
             <button class="actinidio estilo" id="torio">
-                <span>90</span>
-                <h2>Th</h2>
-                <p>Tório</p>
-                <p>232</p>
+                <span class="span-tabela">90</span>
+                <h2 class="h2-tabela">Th</h2>
+                <p class="p-tabela">Tório</p>
+                <p class="p-tabela">232</p>
             </button>
 
             <button class="actinidio estilo" id="protactinio">
-                <span>91</span>
-                <h2>Pa</h2>
-                <p>Protactínio</p>
-                <p>231</p>
+                <span class="span-tabela">91</span>
+                <h2 class="h2-tabela">Pa</h2>
+                <p class="p-tabela">Protactínio</p>
+                <p class="p-tabela">231</p>
             </button>
 
             <button class="actinidio estilo" id="uranio">
-                <span>92</span>
-                <h2>U</h2>
-                <p>Urânio</p>
-                <p>238</p>
+                <span class="span-tabela">92</span>
+                <h2 class="h2-tabela">U</h2>
+                <p class="p-tabela">Urânio</p>
+                <p class="p-tabela">238</p>
             </button>
 
             <button class="actinidio estilo semEfeito" id="netunio" disabled>
-                <span>93</span>
-                <h2>Np</h2>
-                <p>Neptúnio</p>
-                <p>237</p>
+                <span class="span-tabela">93</span>
+                <h2 class="h2-tabela">Np</h2>
+                <p class="p-tabela">Neptúnio</p>
+                <p class="p-tabela">237</p>
             </button>
 
             <button class="actinidio estilo semEfeito" id="plutonio" disabled>
-                <span>94</span>
-                <h2>Pu</h2>
-                <p>Plutônio</p>
-                <p>244</p>
+                <span class="span-tabela">94</span>
+                <h2 class="h2-tabela">Pu</h2>
+                <p class="p-tabela">Plutônio</p>
+                <p class="p-tabela">244</p>
             </button>
 
             <button class="actinidio estilo semEfeito" id="americio" disabled>
-                <span>95</span>
-                <h2>Am</h2>
-                <p>Amerício</p>
-                <p>243</p>
+                <span class="span-tabela">95</span>
+                <h2 class="h2-tabela">Am</h2>
+                <p class="p-tabela">Amerício</p>
+                <p class="p-tabela">243</p>
             </button>
 
             <button class="actinidio estilo semEfeito" id="curio" disabled>
-                <span>96</span>
-                <h2>Cm</h2>
-                <p>Cúrio</p>
-                <p>247</p>
+                <span class="span-tabela">96</span>
+                <h2 class="h2-tabela">Cm</h2>
+                <p class="p-tabela">Cúrio</p>
+                <p class="p-tabela">247</p>
             </button>
 
             <button class="actinidio estilo semEfeito" id="berquelio" disabled>
-                <span>97</span>
-                <h2>Bk</h2>
-                <p>Berquélio</p>
-                <p>247</p>
+                <span class="span-tabela">97</span>
+                <h2 class="h2-tabela">Bk</h2>
+                <p class="p-tabela">Berquélio</p>
+                <p class="p-tabela">247</p>
             </button>
 
             <button class="actinidio estilo semEfeito" id="californio" disabled>
-                <span>98</span>
-                <h2>Cf</h2>
-                <p>Califórnio</p>
-                <p>251</p>
+                <span class="span-tabela">98</span>
+                <h2 class="h2-tabela">Cf</h2>
+                <p class="p-tabela">Califórnio</p>
+                <p class="p-tabela">251</p>
             </button>
 
             <button class="actinidio estilo semEfeito" id="einstenio" disabled>
-                <span>99</span>
-                <h2>Es</h2>
-                <p>Einstênio</p>
-                <p>252</p>
+                <span class="span-tabela">99</span>
+                <h2 class="h2-tabela">Es</h2>
+                <p class="p-tabela">Einstênio</p>
+                <p class="p-tabela">252</p>
             </button>
 
             <button class="actinidio estilo semEfeito" id="fermio" disabled>
-                <span>100</span>
-                <h2>Fm</h2>
-                <p>Férmio</p>
-                <p>257</p>
+                <span class="span-tabela">100</span>
+                <h2 class="h2-tabela">Fm</h2>
+                <p class="p-tabela">Férmio</p>
+                <p class="p-tabela">257</p>
             </button>
 
             <button class="actinidio estilo semEfeito" id="mendelevio" disabled>
-                <span>101</span>
-                <h2>Md</h2>
-                <p>Mendelévio</p>
-                <p>258</p>
+                <span class="span-tabela">101</span>
+                <h2 class="h2-tabela">Md</h2>
+                <p class="p-tabela">Mendelévio</p>
+                <p class="p-tabela">258</p>
             </button>
 
             <button class="actinidio estilo semEfeito" id="nobelio" disabled>
-                <span>102</span>
-                <h2>No</h2>
-                <p>Nobélio</p>
-                <p>259</p>
+                <span class="span-tabela">102</span>
+                <h2 class="h2-tabela">No</h2>
+                <p class="p-tabela">Nobélio</p>
+                <p class="p-tabela">259</p>
             </button>
 
             <button class="actinidio estilo semEfeito" id="laurencio" disabled>
-                <span>103</span>
-                <h2>Lr</h2>
-                <p>Laurêncio</p>
-                <p>262</p>
+                <span class="span-tabela">103</span>
+                <h2 class="h2-tabela">Lr</h2>
+                <p class="p-tabela">Laurêncio</p>
+                <p class="p-tabela">262</p>
             </button>
         </div>
 
-        <!-- FOOTER -->
-        <!-- FOOTER -->
-        <footer>
-            <div><button type="button" id="exibir" class="btn btn-primary">Exibir todos os elementos</button></div>
-            <ul>
-                <li class="nao-metal-font">Não Metais</li>
-                <li class="gas-nobre-font">Gases Nobres</li>
-                <li class="metal-alcalino-font">Metais Alcalinos</li>
-                <li class="metal-alcalino-terroso-font">Metais Alcalino-Terrosos</li>
-                <li class="semimetal-font">Semimetais</li>
-                <li class="halogenio-font">Halogênios</li>
-                <li class="outros-metais-font">Outros Metais</li>
-                <li class="metal-transicao-font">Metais de Transição</li>
-                <li class="lantanideo-font">Lantanídeos</li>
-                <li class="actinidio-font">Actinídios</li>
-            </ul>
-        </footer>
+        <div class="footer-tabela-periodica" id="legenda-cores-tabela">
+            <div>
+                <ul class="ul-tabela-periodica">
+                    <li class="li-tabela-periodica nao-metal-font">Não Metais</li>
+                    <li class="li-tabela-periodica gas-nobre-font">Gases Nobres</li>
+                    <li class="li-tabela-periodica metal-alcalino-font">Metais Alcalinos</li>
+                    <li class="li-tabela-periodica metal-alcalino-terroso-font">Metais Alcalino-Terrosos</li>
+                    <li class="li-tabela-periodica semimetal-font">Semimetais</li>
+                    <li class="li-tabela-periodica halogenio-font">Halogênios</li>
+                    <li class="li-tabela-periodica outros-metais-font">Outros Metais</li>
+                    <li class="li-tabela-periodica metal-transicao-font">Metais de Transição</li>
+                    <li class="li-tabela-periodica lantanideo-font">Lantanídeos</li>
+                    <li class="li-tabela-periodica actinidio-font">Actinídios</li>
+                </ul>
+            </div>
+        </div>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"> </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
-        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
-        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous">
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"> </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"> </script>
     <script src="./js/jquery.js"></script>
     <script src="./js/js_tabela_periodica.js"></script>
-</body>
+</div>
 
 </html>

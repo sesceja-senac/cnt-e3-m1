@@ -1,6 +1,6 @@
-/**************************************************/
-/********************** capa *********************/
-/************************************************/
+/***************************************************************/
+/**************************** Capa ****************************/
+/*************************************************************/
 
 .bg {
     position: relative;
@@ -10,52 +10,65 @@
     position: absolute;
 }
 
-.oculto {
+/* .oculto {
     display: none;
-}
+} */
 
 #iniciar {
     width: 50%;
     top: 30%;
-    background: url(/img/bgBotaoInicial.png);
+   /* background: url(/img/bgBotaoInicial.png); */
     filter: drop-shadow(18px 17px 10px #AFAFAF);
 }
 
-/************************************************/
-/***************** microscopio *****************/
-/**********************************************/
+.p-paisagem {
+    color: white;
+    text-align: center;
+}
+
+.img-paisagem {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+/***************************************************************/
+/************************ Microscopio *************************/
+/*************************************************************/
 
 .areia1 {
-    top: 44rem;
-    left: 68rem;
+    top: 814px;
+    left: 1254px;
     width: 4%;
 }
 
 .areia2 {
-    top: 43.8rem;
-    left: 50rem;
+    top: 805px;
+left: 925px;
     width: 5%;
 }
 
 .botao1 {
-    left: 64%;
-    width: 31%;
-    height: 50%;
-    top: 45%;
+    right: 68px;
+    width: 699px;
+    height: 219px;
+    top: 751px;
     opacity: 0;
 }
 
 .botao2 {
-    left: 39%;
-    width: 24%;
-    height: 93%;
-    top: 2%;
+    left: 770px;
+    width: 412px;
+    height: 750px;
+    top: 230px;
     opacity: 0;
-}
+  }
 
 #seta1 {
-    top: 32rem;
-    left: 71rem;
+    top: 590px;
+    left: 1270px;
     animation: efeitinho 1s infinite alternate;
 }
 
@@ -65,10 +78,17 @@
     animation: efeitinho 1s infinite alternate;
 }
 
-.some {
+/* .some {
     display: none;
+} */
+@media only screen and (max-width: 991px){
+    .visualizacoes {
+        max-width:440px;
+        margin: auto;
+        display: block;
+        height: auto;
+    }
 }
-
 @keyframes efeitinho {
     from {
         transform: translateY(40px);
@@ -79,10 +99,14 @@
     }
 }
 
-/***********************************************/
-/***************** Tela modal *****************/
-/*********************************************/
-
+/***************************************************************/
+/********************** Estilos modais ************************/
+/*************************************************************/
+.btn-close {
+    opacity: 1;
+    font-size: 27px;
+    margin-right: 20px !important;
+  }
 .bg-escuro {
     background-color: #525252;
 }
@@ -97,7 +121,7 @@
     border: 1px solid gray;
 }
 
-.btn.btn-primary::before {
+.btn.btn-primary.quadradinho::before {
     content: ' ';
     display: inline-block;
     width: 1.2em;
@@ -112,13 +136,128 @@
 
 .titulo {
     color: white;
-    padding-top: 3%;
+    padding-top: 10px;
     text-transform: uppercase;
+  }
+
+.bg-branco {
+    background-color: white;
 }
 
-/**************************************************************/
-/************** Reponsividade com media queries **************/
-/************************************************************/
+.btn.btn-primary.quadradinho:hover:before {
+    border: 0.7em solid;
+}
+
+.btn.btn-primary.quadradinho.preenchido::before {
+    border: 0.7em solid;
+}
+
+/***************************************************************/
+/************** Reponsividade com media queries ***************/
+/*************************************************************/
+.crop {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden
+}
+.secoes {
+            width: 1920px; /* 1280x768 = 16:9 */
+            height: 1080px;
+            display: block;
+            position: relative;
+            transform-origin: center center;
+            overflow: hidden;
+}
+.colocar_no_meio {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: calc(1920px / -2);
+    margin-top: calc(1080px / -2);
+}
+html, body{
+    height: 100%;
+
+}
+body{
+    overflow: hidden;
+    background-color: #333
+}
+@media only screen and (orientation: portrait) {
+    .barreira {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #6a6aff;
+        z-index: 9999999999999999999;
+      }
+     
+}
+/* 
+
+
+@media screen and (height: 360px) {
+    @media screen and (width: 760px) {
+
+        .botao1 {
+            left: 29rem;
+            width: 35%;
+            height: 64%;
+            top: 11rem;
+        }
+
+        .botao2 {
+            left: 39%;
+            width: 34%;
+            height: 103%;
+            top: 14%;
+        }
+
+        .areia1 {
+            top: 21.6rem;
+            left: 32.4rem;
+            width: 4%;
+        }
+
+        .areia2 {
+            top: 20rem;
+            left: 22.8rem;
+            width: 5%;
+        }
+
+        #seta1 {
+            top: 16rem;
+            left: 36rem;
+            animation: efeitinho 1s infinite alternate;
+            width: 9%;
+        }
+
+        #seta2 {
+            top: 4.2rem;
+            left: 28.3rem;
+            animation: efeitinho 1s infinite alternate;
+            width: 9%;
+        }
+
+        .col-9 {
+            flex: 0 0 auto;
+            width: 108%;
+        }
+
+        .btn-group-vertical {
+            flex-direction: row;
+        }
+    }
+}
+
 @media screen and (height: 360px) {
     @media screen and (width: 800px) {
 
@@ -127,7 +266,6 @@
             width: 35%;
             height: 64%;
             top: 13rem;
-            /* opacity: 0; */
         }
 
         .botao2 {
@@ -135,7 +273,6 @@
             width: 34%;
             height: 103%;
             top: 20%;
-            /* opacity: 0%; */
         }
 
         .areia1 {
@@ -171,10 +308,6 @@
 
         .btn-group-vertical {
             flex-direction: row;
-        }
-
-        .modal {
-            --bs-modal-width: 400px;
         }
     }
 }
@@ -221,19 +354,6 @@
             animation: efeitinho 1s infinite alternate;
             width: 9%;
         }
-
-        .col-9 {
-            flex: 0 0 auto;
-            width: 100%;
-        }
-
-        .btn-group-vertical {
-            flex-direction: row;
-        }
-
-        .modal {
-            --bs-modal-width: 400px;
-        }
     }
 }
 
@@ -279,19 +399,6 @@
             animation: efeitinho 1s infinite alternate;
             width: 9%;
         }
-
-        .col-9 {
-            flex: 0 0 auto;
-            width: 108%;
-        }
-
-        .btn-group-vertical {
-            flex-direction: row;
-        }
-
-        .modal {
-            --bs-modal-width: 400px;
-        }
     }
 }
 
@@ -335,19 +442,6 @@
             left: 52.3rem;
             animation: efeitinho 1s infinite alternate;
             width: 9%;
-        }
-
-        .col-9 {
-            flex: 0 0 auto;
-            width: 108%;
-        }
-
-        .btn-group-vertical {
-            flex-direction: row;
-        }
-
-        .modal {
-            --bs-modal-width: 400px;
         }
     }
 }
@@ -393,18 +487,35 @@
             animation: efeitinho 1s infinite alternate;
             width: 9%;
         }
-
-        .col-9 {
-            flex: 0 0 auto;
-            width: 108%;
-        }
-
-        .btn-group-vertical {
-            flex-direction: row;
-        }
-
-        .modal {
-            --bs-modal-width: 400px;
-        }
     }
 }
+
+@media screen and (height: 1080px) {
+    @media screen and (width: 1920px) {
+
+        .areia1 {
+            top: 54.3rem;
+            left: 81.6rem;
+            width: 4%;
+        }
+
+        .areia2 {
+            top: 74.5%;
+            left: 58rem;
+        }
+
+        #seta1 {
+            top: 40.5rem;
+            left: 85rem;
+            animation: efeitinho 1s infinite alternate;
+            width: 9%;
+        }
+
+        #seta2 {
+            top: 15.2rem;
+            left: 70.3rem;
+            animation: efeitinho 1s infinite alternate;
+            width: 9%;
+        }
+    }
+} */

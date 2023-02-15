@@ -201,8 +201,6 @@ p{
   .caixa, .caixa.icone{
     border: 2px dashed grey;
     padding: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     margin-left: .5rem;
     margin-right: .5rem;    
   }
@@ -296,18 +294,14 @@ p{
   .caixa.icone.praticar{
       padding: none;
       margin: 0;
+      page-break-before: avoid !important;
   }
   .esquemaDaBru{
-    page-break-inside:auto;
-    page-break-after:auto;
-    page-break-before:auto;
+    page-break-inside: avoid !important;
   }
   .esquemaDaBru .btn-sesc{
       border: 0;
       box-shadow: none;
-      page-break-inside:auto;
-      page-break-after:auto;
-      page-break-before:auto;
   }
   .esquemaDaBru .feedbacks{
       display: none;
@@ -331,8 +325,6 @@ p{
       transition: none;
       width: auto;
       margin: 0;
-      margin-top: 5rem;
-      margin-bottom: 0rem;
   }
   .modal-dialog .modal-header .btn-close{
       display: none;
@@ -387,6 +379,8 @@ p{
   background-color: white !important;
 
 }
+figcaption{text-align: center !important;}
 
-
+.bt-tooltip{text-decoration: underline;}
+.modal.no-print{display: none !important;}
 }

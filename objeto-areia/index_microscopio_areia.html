@@ -10,95 +10,126 @@
     <title>Microscópio de areia</title>
 </head>
 
-<body>
-    <section id="capaMicroscopio">
-        <div class="bg d-flex justify-content-center">
-            <span type="button" id="iniciar" class="sobrepor"><img src="./img/bgBotaoInicial.png"class="img-fluid"></span>
-            <img src="./img/BG_laboratorio.png" class="img-fluid">
-        </div>  
-    </section>
-
-    <section id="microscopio" class="oculto">
-        <div class="bg">
-            <img src="./img/BG_laboratorio.png" class="img-fluid">
-        </div>
-        <img src="./img/amostra_no_quadradinho.png" id="areia1" class="img-fluid sobrepor areia1">
-        <img src="./img/amostra_na_lupa.png" id="areia2" class="img-fluid sobrepor areia2 some">
-        <img src="./img/seta.png" id="seta1" class="img-fluid sobrepor">
-        <img src="./img/seta.png" id="seta2" class="img-fluid sobrepor some">
-        <button type="button" class="sobrepor botao1">primeiro</button>
-        <button type="button" class="sobrepor botao2" data-bs-toggle="modal" data-bs-target="#modalZoom01">segundo</button>
-    </section>
+<div class="crop">
+    <div class="body-microscopio colocar_no_meio">
+        <section id="capaMicroscopio" class="secoes">
+            <div class="bg d-flex justify-content-center">
+                <span type="button" id="iniciar" class="sobrepor"><img src="./img/bgBotaoInicial.png" class="img-fluid"></span>
+                <img src="./img/BG_laboratorio.png" class="img-fluid">
+            </div>
+        </section>
     
-    <!-- Modal -->
+        <section id="microscopio" class="d-none secoes">
+            <div class="bg">
+                <img src="./img/BG_laboratorio.png" class="img-fluid">
+            </div>
+            <img src="./img/amostra_no_quadradinho.png" id="areia1" class="img-fluid sobrepor areia1">
+            <img src="./img/amostra_na_lupa.png" id="areia2" class="img-fluid sobrepor areia2 d-none">
+            <img src="./img/seta.png" id="seta1" class="img-fluid sobrepor">
+            <img src="./img/seta.png" id="seta2" class="img-fluid sobrepor d-none">
+            <button type="button" class="sobrepor botao1" data-bs-toggle="modal" data-bs-target="#modalPunhadoAreia">primeiro</button>
+            <button type="button" class="sobrepor botao2" data-bs-toggle="modal" data-bs-target="#modalZoom01">segundo</button>
+        </section>
+    
+       
+    </div>
+</div>
+ <!-- Modal -->
 
-    <div class="modal fade" id="modalZoom01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content bg-escuro">
-                <div>
-                    <h5 class="text-center titulo"><strong> Grãos </strong> (Zoom 01)</h5>
-                </div>
-                <div class="modal-body row">
-                    <div class="col-9"> <img src="./img/zoom_01.png" class="img-fluid"> </div>
-                    <div class="col-3">
-                        <div class="btn-group-vertical">
-                            <button type="button" class="btn btn-primary zoom01" data-bs-toggle="modal" data-bs-target="#modalZoom01" disabled>Zoom 01</button>
-                            <button type="button" class="btn btn-primary zoom02" data-bs-toggle="modal" data-bs-target="#modalZoom02">Zoom 02</button>
-                            <button type="button" class="btn btn-primary zoom03" data-bs-toggle="modal" data-bs-target="#modalZoom03">Zoom 03</button>
-                        </div>
-                    </div>
-                </div>
+ <div class="modal" id="modalPunhadoAreia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content bg-escuro">
+            <div class="modal-header titulo">
+                <h5 class="modal-title " id="staticBackdropLabel"><strong> Amostra: punhado de areia</strong></h5>
+            </div>
+            <img src="./img/modal_punhado_de_areia.png" class="img-fluid visualizacoes">
+            <div class="modal-footer bg-branco">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Adicionar amostra a lupa</button>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="modal fade" id="modalZoom02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content bg-escuro">
-                <div>
-                    <h5 class="text-center titulo"><strong> Grãos </strong> (Zoom 02)</h5>
-                </div>
-                <div class="modal-body row">
-                    <div class="col-9"> <img src="./img/zoom_02.png" class="img-fluid"></div>
-                    <div class="col-3">
-                        <div class="btn-group-vertical">
-                            <button type="button" class="btn btn-primary zoom01" data-bs-toggle="modal" data-bs-target="#modalZoom01">Zoom 01</button>
-                            <button type="button" class="btn btn-primary zoom02" data-bs-toggle="modal" data-bs-target="#modalZoom02" disabled>Zoom 02</button>
-                            <button type="button" class="btn btn-primary zoom03" data-bs-toggle="modal" data-bs-target="#modalZoom03">Zoom 03</button>
-                        </div>
+<div class="modal" id="modalZoom01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content bg-escuro">
+            <div class="modal-header titulo">
+                <h5 class="text-center titulo"><strong> Grãos </strong> (Zoom 01)</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            </div>
+            <div class="modal-body row d-block d-lg-flex">
+                <div class="col-12 col-lg-9"> <img src="./img/zoom_01.png" class="img-fluid visualizacoes"> </div>
+                <div class="col-12 col-lg-3">
+                    <div class="row">
+                        <div class="col-4 col-lg-12 text-center"><button type="button" class="btn btn-primary quadradinho preenchido" data-bs-toggle="modal" data-bs-target="#modalZoom01" disabled>Zoom 01</button></div>
+                        <div class="col-4 col-lg-12 text-center"><button type="button" class="btn btn-primary quadradinho" data-bs-toggle="modal" data-bs-target="#modalZoom02"><strong>Zoom 02</strong></button></div>
+                        <div class="col-4 col-lg-12 text-center"><button type="button" class="btn btn-primary quadradinho" data-bs-toggle="modal" data-bs-target="#modalZoom03"><strong>Zoom 03</strong></button></div>
                     </div>
                 </div>
             </div>
+          
         </div>
     </div>
+</div>
 
-    <div class="modal fade" id="modalZoom03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content bg-escuro">
-                <div>
-                    <h5 class="text-center titulo"><strong>Mineirais</strong> (Zoom 03)</h5>
-                </div>
-                <div class="modal-body row">
-                    <div class="col-9"> <img src="./img/zoom_03.jpg" class="img-fluid"></div>
-                    <div class="col-3">
-                        <div class="btn-group-vertical">
-                            <button type="button" class="btn btn-primary zoom01" data-bs-toggle="modal" data-bs-target="#modalZoom01">Zoom 01</button>
-                            <button type="button" class="btn btn-primary zoom02" data-bs-toggle="modal" data-bs-target="#modalZoom02">Zoom 02</button>
-                            <button type="button" class="btn btn-primary zoom03" data-bs-toggle="modal" data-bs-target="#modalZoom03" disabled>Zoom 03</button>
-                        </div>
+<div class="modal" id="modalZoom02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content bg-escuro">
+            <div class="modal-header titulo">
+
+                <h5 class="text-center titulo"><strong> Grãos </strong> (Zoom 02)</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            </div>
+            <div class="modal-body row d-block d-lg-flex">
+                <div class="col-12 col-lg-9"> <img src="./img/zoom_02.png" class="img-fluid visualizacoes"></div>
+                <div class="col-12 col-lg-3">
+                    <div class="row">
+                        <div class="col-4 col-lg-12 text-center"><button type="button" class="btn btn-primary quadradinho" data-bs-toggle="modal" data-bs-target="#modalZoom01"><strong>Zoom 01</strong></button></div>
+                        <div class="col-4 col-lg-12 text-center"><button type="button" class="btn btn-primary quadradinho preenchido" data-bs-toggle="modal" data-bs-target="#modalZoom02" disabled>Zoom 02</button></div>
+                        <div class="col-4 col-lg-12 text-center"><button type="button" class="btn btn-primary quadradinho" data-bs-toggle="modal" data-bs-target="#modalZoom03"><strong>Zoom 03</strong></button></div>
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
+</div>
 
+<div class="modal" id="modalZoom03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content bg-escuro">
+            <div class="modal-header titulo">
+                <h5 class="text-center titulo"><strong>Mineirais</strong> (Zoom 03)</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"> </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"> </script>
-    <script src="./js/jquery.js"></script>
-    <script src="./js/js_microscopio_areia.js"></script>
-</body>
+            </div>
+            <div class="modal-body row d-block d-lg-flex">
+                <div class="col-12 col-lg-9"> <img src="./img/zoom_03.jpg" class="img-fluid visualizacoes"></div>
+                <div class="col-12 col-lg-3">
+                    <div class="row">
+                        <div class="col-4 col-lg-12 text-center"><button type="button" class="btn btn-primary quadradinho" data-bs-toggle="modal" data-bs-target="#modalZoom01"><strong>Zoom 01</strong></button></div>
+                        <div class="col-4 col-lg-12 text-center"><button type="button" class="btn btn-primary quadradinho" data-bs-toggle="modal" data-bs-target="#modalZoom02"><strong>Zoom 02</strong></button></div>
+                        <div class="col-4 col-lg-12 text-center"><button type="button" class="btn btn-primary quadradinho preenchido" data-bs-toggle="modal" data-bs-target="#modalZoom03" disabled>Zoom 03</button></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<div class="barreira">
+<div>  <img src="./img/vire.gif" class="img-fluid img-paisagem">
+<p class="p-paisagem"><strong>Vire o aparelho para o modo paisagem</strong></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script src="./js/jquery.js"></script>
+<script src="./js/js_microscopio_areia.js"></script>
+
 
 </html>

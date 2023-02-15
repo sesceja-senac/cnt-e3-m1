@@ -1080,27 +1080,27 @@ const name = (params) => {
 const modalTabelaPeriodica = (params) => {
     var modal =
         '<div class="modal black" tabindex="-1" id="modal">' +
-            '<div id="meu_modal" class="modal-dialog">' +
-                '<div class="modal-content">' +
-                    '<div class="modal-header ' + params.grupo + '">' +
-                        '<h5 class="modal-title"><strong>' + params.title + '</strong></h5>' +
-                        '<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>'+
-                    '</div>' +
-                    '<div class="modal-body">' +
-                        '<div class="row">'+
-                        '<div class="col-12 col-sm-6"><h6><strong>Número atômico:</strong><br>' + params.atomico + '</h6></div>'+
-                        '<div class="col-12 col-sm-6"><h6><strong>Número de massa:</strong><br>' + params.massa + '</h6></div>'+
-                        '</div>'+
-                        '<div> ' +
-                            '<img class="img-fluid" src="' + params.img + '"/>' +
-                            '<h6>' + params.desc + '</h6>' +
-                        '</div>' +
-                    '</div>' +
-                    '<div class="modal-footer">'+
-                        '<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>'+
-                    '</div>'+
-                '</div>' +
-            '</div>' +
+        '<div id="meu_modal" class="modal-dialog">' +
+        '<div class="modal-content">' +
+        '<div class="modal-header ' + params.grupo + '">' +
+        '<h5 class="modal-title"><strong>' + params.title + '</strong></h5>' +
+        '<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>' +
+        '</div>' +
+        '<div class="modal-body">' +
+        '<div class="row">' +
+        '<div class="col-12 col-sm-6"><h6><strong>Número atômico:</strong><br>' + params.atomico + '</h6></div>' +
+        '<div class="col-12 col-sm-6"><h6><strong>Número de massa:</strong><br>' + params.massa + '</h6></div>' +
+        '</div>' +
+        '<div> ' +
+        '<img class="img-fluid" src="' + params.img + '"/>' +
+        '<h6>' + params.desc + '</h6>' +
+        '</div>' +
+        '</div>' +
+        '<div class="modal-footer">' +
+        '<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>' +
+        '</div>' +
+        '</div>' +
+        '</div>' +
         '</div>';
 
     $("#modaisDosElementos").html(modal);
@@ -1109,10 +1109,4 @@ const modalTabelaPeriodica = (params) => {
 
 $(document).on("click", ".estilo", function (e) {
     modalTabelaPeriodica(name($(this).attr("id")));
-});
-
-$("#exibir").click(function (e) {
-    e.preventDefault();
-    $(".semEfeito").show();
-    $("#exibir").prop("disabled", true);
 });
