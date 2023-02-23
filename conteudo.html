@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/css/animate.min.css" />
     <link rel="stylesheet" href="assets/fa/css/all.min.css">
     <link rel="stylesheet" href="assets/css/template.css">
-    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/jquery-ui.min.css"> -->
     <link rel="stylesheet" href="assets/print/print.css">
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/css/lt-estilos.css">
@@ -534,7 +534,7 @@
                                                 <form name="gregorian" action="javascript:return false;">
                                                     <div class="input-group mb-3">
                                                         <span class="input-group-text">Data: </span>
-                                                        <input  class="calendario-input text-center" type="text" name="day" value="19" size="3" />
+                                                        <input  class="calendario-input text-center" type="text" name="day" value="19" size="1" />
                                                         <select  class="calendario-select text-center" name="month" size="1">
                                                             <option value="1">Janeiro</option>
                                                             <option value="2">Fevereiro</option>
@@ -549,7 +549,7 @@
                                                             <option value="11">Novembro</option>
                                                             <option value="12">Dezembro</option>
                                                         </select>
-                                                        <input type="text" class="calendario-input text-center" name="year" value="2023" size="5" />
+                                                        <input type="text" class="calendario-input text-center" name="year" value="2023" size="2" />
                                                         <input type="text" class="calendario-input text-center" name="leap" value="" readonly="readonly" hidden />
                                                     </div>
                                                     <div hidden>
@@ -1927,8 +1927,8 @@
     <script src="assets/interativos/esquema_bru/esquema-bru.js"></script>
     <script src="assets/js/geral.js"></script>
     <script src="assets/js/rellax.min.js"></script>
-    <script src="assets/js/jquery-ui.js"></script>
-    <script src="assets/js/jqueryui-touch-punch.js"></script>
+    <!-- <script src="assets/js/jquery-ui.js"></script> -->
+    <!-- <script src="assets/js/jqueryui-touch-punch.js"></script> -->
     <script src="assets/js/script.js"></script>
     <script src="assets/js/draggable.js"></script>
     <script src="assets/js/jogoMemoria.js"></script>
@@ -1953,12 +1953,10 @@
             vertical: true
         });
 
-        if (location.search != "") {
-            presetDataToRequest(location.search.substring(1));
-        } else {
+
             setDateToToday();
             calcGregorian();
-        }
+
     </script>
     <!-- Versao atual do handtalk -->
     <script>
